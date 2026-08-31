@@ -1,0 +1,14 @@
+{
+  "dataset_version": "pilot-v1.1-human-spot-checked-candidate",
+  "schema_version": "evidence-grounding-v2.0",
+  "base_file": "data/eval/evidence_grounding_v2/pilot.jsonl",
+  "base_sha256": "d342b84865f0023dd0e4269514f0232231bb003d2d155decb8c5ee51afa789b8",
+  "overlay_file": "data/eval/evidence_grounding_v2/pilot_human_spot_check_overlay.json",
+  "candidate_file": "data/eval/evidence_grounding_v2/pilot_v1_1_candidate.jsonl",
+  "candidate_sha256": "97ec97156aaf8e3dcae76daeeed89510d5939918fd95f176a7fd572c8b68712e",
+  "case_count": 10,
+  "requirement_unit_count": 30,
+  "label_provenance": "ai_draft_with_partial_human_spot_check",
+  "review_status": "pending_full_human_review",
+  "allowed_claim": "posthoc_pilot_diagnostic_only"
+}

@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "invalidated_before_official_held_out",
+  "date": "2026-08-01",
+  "scope": "v5 development production canary revision 2, first 8 cases",
+  "invalidated_corpus_sha256": "fae722473ec000fb99b0f5637d4d4c5f1ec532c42d9779c04e80e1b82a07f1cb",
+  "pilot_report_sha256": "190054e998087d01b4cbbbe5eb0e48fd8925084f785f2f99b1c28d1801877cb0",
+  "observed_result": {
+    "completion": "8/8",
+    "requirement_f1": 1.0,
+    "link_f1": 0.211,
+    "fit_band_accuracy": 0.75
+  },
+  "reason": "Development review found two evaluation/prompt issues: gold spans included non-semantic artifact labels while the model correctly selected the factual clause, and the mapping prompt did not explicitly separate semantic support_status from provenance level.",
+  "allowed_revision": "Use the factual clause as the gold span and state the already-approved support-status/level orthogonality in the development prompt.",
+  "held_out_observed": false,
+  "quality_claim_allowed": false
+}

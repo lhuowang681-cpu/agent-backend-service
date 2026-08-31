@@ -1,0 +1,35 @@
+[
+  {
+    "job_id": "job_001",
+    "company": "ByteDance",
+    "title": "大模型后训练实习生",
+    "desc": "参与大模型后训练、SFT、偏好对齐、RLHF/RLAIF、DPO/GRPO、评测集构建和 bad case 分析，要求熟悉 LoRA 训练和实验日志。",
+    "url": "https://example.com/bytedance-posttraining",
+    "location": "北京",
+    "salary": "200-400/天",
+    "source": "fixture",
+    "job_type": "intern"
+  },
+  {
+    "job_id": "job_002",
+    "company": "MiniMax",
+    "title": "LLM Alignment Intern",
+    "desc": "支持 instruction tuning、preference data 清洗、reward model 评测和安全对齐分析，要求能读训练日志并做对比实验。",
+    "url": "https://example.com/minimax-alignment",
+    "location": "上海",
+    "salary": "面议",
+    "source": "fixture",
+    "job_type": "intern"
+  },
+  {
+    "job_id": "job_003",
+    "company": "GenericSoft",
+    "title": "Python 后端实习生",
+    "desc": "参与 API 开发、数据库建模、缓存和接口联调，要求 Python Web 框架经验。",
+    "url": "https://example.com/generic-backend",
+    "location": "成都",
+    "salary": "150-250/天",
+    "source": "fixture",
+    "job_type": "intern"
+  }
+]

@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "manifest_id": "evidence_v2_held_out_v2",
+  "split": "held_out",
+  "corpus_id": "evidence-v2-held_out-corpus-v2",
+  "corpus_hash": "25fb065d5b9178b30d56b7e09726271145874eb1c7b0fa98307d2417c4a34db1",
+  "metric_version": "evidence_metrics_v1",
+  "case_inventory": [
+    {
+      "case_id": "hel-negation_scope-01",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ]
+    },
+    {
+      "case_id": "hel-negation_scope-02",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ]
+    },
+    {
+      "case_id": "hel-negation_scope-03",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ]
+    },
+    {
+      "case_id": "hel-negation_scope-04",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ]
+    },
+    {
+      "case_id": "hel-negation_scope-05",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ]
+    },
+    {
+      "case_id": "hel-span_boundaries-01",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ]
+    },
+    {
+      "case_id": "hel-span_boundaries-02",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ]
+    },
+    {
+      "case_id": "hel-span_boundaries-03",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ]
+    },
+    {
+      "case_id": "hel-span_boundaries-04",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ]
+    },
+    {
+      "case_id": "hel-span_boundaries-05",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ]
+    },
+    {
+      "case_id": "hel-c1_claim_gate-01",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ]
+    },
+    {
+      "case_id": "hel-c1_claim_gate-02",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ]
+    },
+    {
+      "case_id": "hel-c1_claim_gate-03",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ]
+    },
+    {
+      "case_id": "hel-c1_claim_gate-04",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ]
+    },
+    {
+      "case_id": "hel-c1_claim_gate-05",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ]
+    },
+    {
+      "case_id": "hel-c2_experiment-01",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c2_experiment-02",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c2_experiment-03",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c2_experiment-04",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c2_experiment-05",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c3_production-01",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c3_production-02",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c3_production-03",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c3_production-04",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-c3_production-05",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ]
+    },
+    {
+      "case_id": "hel-role_title_noise-01",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ]
+    },
+    {
+      "case_id": "hel-role_title_noise-02",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ]
+    },
+    {
+      "case_id": "hel-role_title_noise-03",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ]
+    },
+    {
+      "case_id": "hel-role_title_noise-04",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ]
+    },
+    {
+      "case_id": "hel-role_title_noise-05",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ]
+    },
+    {
+      "case_id": "hel-gap_no_evidence-01",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ]
+    },
+    {
+      "case_id": "hel-gap_no_evidence-02",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ]
+    },
+    {
+      "case_id": "hel-gap_no_evidence-03",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ]
+    },
+    {
+      "case_id": "hel-gap_no_evidence-04",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ]
+    },
+    {
+      "case_id": "hel-gap_no_evidence-05",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ]
+    },
+    {
+      "case_id": "hel-repeated_quote-01",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ]
+    },
+    {
+      "case_id": "hel-repeated_quote-02",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ]
+    },
+    {
+      "case_id": "hel-repeated_quote-03",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ]
+    },
+    {
+      "case_id": "hel-repeated_quote-04",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ]
+    },
+    {
+      "case_id": "hel-repeated_quote-05",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ]
+    }
+  ],
+  "required_slices": [
+    "ambiguous_offset",
+    "broader_narrower_span",
+    "c1_only",
+    "c2",
+    "c3",
+    "exact_span",
+    "experiment_evidence",
+    "gap",
+    "keyword_false_positive",
+    "negation",
+    "no_evidence",
+    "production_evidence",
+    "repeated_quote",
+    "resume_claim_gate",
+    "role_title_noise",
+    "scope"
+  ],
+  "variants": [
+    {
+      "variant_id": "direct_llm_judge",
+      "corpus_id": "evidence-v2-held_out-corpus-v2",
+      "corpus_hash": "25fb065d5b9178b30d56b7e09726271145874eb1c7b0fa98307d2417c4a34db1",
+      "jd_parser_version": "direct-judge-v1",
+      "evidence_prompt_version": "direct-judge-v2",
+      "fit_policy_version": "direct-judge-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "atomized_single_link",
+      "corpus_id": "evidence-v2-held_out-corpus-v2",
+      "corpus_hash": "25fb065d5b9178b30d56b7e09726271145874eb1c7b0fa98307d2417c4a34db1",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "atomized-single-link-v2",
+      "fit_policy_version": "single-link-fit-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "full_evidence_v2",
+      "corpus_id": "evidence-v2-held_out-corpus-v2",
+      "corpus_hash": "25fb065d5b9178b30d56b7e09726271145874eb1c7b0fa98307d2417c4a34db1",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "evidence-mapping-v2",
+      "fit_policy_version": "fit_policy_v2_initial",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    }
+  ],
+  "held_out_frozen": true,
+  "synthetic_only": true
+}

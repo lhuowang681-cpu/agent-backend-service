@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "corpus_revision": "evidence-v2-100-cases-v2",
+  "construction": "20 scenario families x 5 variants; family-level 60/40 split",
+  "synthetic_only": true,
+  "quality_claim_allowed": false,
+  "splits": {
+    "development": {
+      "case_count": 60,
+      "family_count": 12,
+      "family_ids": [
+        "sparse_jd",
+        "compound_parent",
+        "importance_mix",
+        "hard_gate",
+        "partial_ownership",
+        "contradiction",
+        "multi_link_independence",
+        "generated_injection",
+        "unsupported_metric",
+        "duplicate_evidence",
+        "paraphrase",
+        "bilingual_unicode"
+      ],
+      "corpus_file": "cases_dev_v2.json",
+      "corpus_sha256": "cc49fe05ec21bbf54606ff418b0b7c9b1b65a50c8eb18827916e57a976f9cd7d",
+      "manifest_file": "manifest_dev_v2.json",
+      "manifest_sha256": "f19eaa8df85dbb8ccf61982a6d63cd08c17ced62a9520d798edab3beaa48afe0",
+      "frozen_before_live_run": true
+    },
+    "held_out": {
+      "case_count": 40,
+      "family_count": 8,
+      "family_ids": [
+        "negation_scope",
+        "span_boundaries",
+        "c1_claim_gate",
+        "c2_experiment",
+        "c3_production",
+        "role_title_noise",
+        "gap_no_evidence",
+        "repeated_quote"
+      ],
+      "corpus_file": "cases_held_out_v2.json",
+      "corpus_sha256": "25fb065d5b9178b30d56b7e09726271145874eb1c7b0fa98307d2417c4a34db1",
+      "manifest_file": "manifest_held_out_v2.json",
+      "manifest_sha256": "79b7060c47b1c61bcc21811f57018342199aebe50a0c0accc0f0759d0b901bc1",
+      "frozen_before_live_run": true
+    }
+  }
+}

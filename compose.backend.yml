@@ -1,0 +1,65 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: job_agent
+      POSTGRES_USER: job_agent
+      POSTGRES_PASSWORD: job_agent_dev
+    ports:
+      - "54329:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U job_agent -d job_agent"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+    volumes:
+      - job_agent_postgres:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--appendonly", "yes"]
+    ports:
+      - "63799:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+    volumes:
+      - job_agent_redis:/data
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment: &backend-environment
+      JOB_AGENT_DATABASE_URL: postgresql://job_agent:job_agent_dev@postgres:5432/job_agent
+      JOB_AGENT_REDIS_URL: redis://redis:6379/0
+      JOB_AGENT_ALLOWED_USER_IDS: demo-user-a,demo-user-b
+      JOB_AGENT_BACKEND_WORKSPACE_ROOT: /app/backend_data
+    command: ["python", "-m", "uvicorn", "job_agent.backend_service.persistent_main:app", "--app-dir", "src", "--host", "0.0.0.0", "--port", "8000"]
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    environment:
+      <<: *backend-environment
+    command: ["python", "-m", "job_agent.backend_service.worker_main"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    volumes:
+      - job_agent_backend_data:/app/backend_data
+
+volumes:
+  job_agent_postgres:
+  job_agent_redis:
+  job_agent_backend_data:

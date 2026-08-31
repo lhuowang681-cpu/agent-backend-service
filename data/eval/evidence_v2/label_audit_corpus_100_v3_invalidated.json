@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "invalidated_corpus_revision": "evidence-v2-100-cases-v3",
+  "replacement_corpus_revision": "evidence-v2-100-cases-v4",
+  "reason": "V3 correctly separated C2/C3 into user_artifact sources, but its quoted gold evidence was still a responsibility assertion rather than a concrete experiment or production record. V4 uses baseline/control/failure/reproduction details for C2 and rollout/p95/alert/rollback details for C3. The semantic requirement scorer was also corrected to score atom text separately from exact source-span quality.",
+  "discovery_timing": "Detected in a six-case development source canary before any held-out provider call.",
+  "development_live_rows_run": 12,
+  "held_out_live_rows_run": 0,
+  "quality_claim_allowed": false,
+  "historical_private_reports": [
+    "output/private/evidence_eval/glm-5.2-dev-v3-source-canary-baseline.json",
+    "output/private/evidence_eval/glm-5.2-dev-v3-source-canary-production.json"
+  ]
+}

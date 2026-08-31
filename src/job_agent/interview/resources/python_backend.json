@@ -1,0 +1,24 @@
+[
+  {
+    "id": "backend-idempotency",
+    "category": "fundamentals",
+    "topics": ["idempotency", "recovery"],
+    "difficulty": "medium",
+    "suitable_roles": ["backend-engineer", "agent-engineer"],
+    "verification_goal": "Check whether the candidate handles uncertain external outcomes.",
+    "question": "How would you retry an operation when the external side effect may already have succeeded?",
+    "follow_up_axes": ["idempotency key", "receipt lookup", "manual reconciliation"],
+    "reference_points": ["persist execution identity", "query provider receipt", "do not blindly replay"]
+  },
+  {
+    "id": "backend-concurrency-choice",
+    "category": "fundamentals",
+    "topics": ["python-concurrency", "asyncio"],
+    "difficulty": "easy",
+    "suitable_roles": ["backend-engineer", "agent-engineer"],
+    "verification_goal": "Check whether the candidate chooses a Python concurrency model from workload constraints.",
+    "question": "When would you choose asyncio over threads or processes for an API-heavy service?",
+    "follow_up_axes": ["I/O bound", "CPU bound", "blocking libraries"],
+    "reference_points": ["cooperative I/O", "GIL and CPU work", "avoid blocking the event loop"]
+  }
+]

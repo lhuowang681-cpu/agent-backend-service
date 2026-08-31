@@ -1,0 +1,17 @@
+services:
+  api:
+    environment:
+      JOB_AGENT_DATABASE_URL: postgresql://job_agent:job_agent_dev@postgres:5432/job_agent_load
+      JOB_AGENT_STREAM_NAME: job-agent:load-runs
+      JOB_AGENT_CONSUMER_GROUP: load-workers
+      JOB_AGENT_METRICS_PREFIX: job-agent:load-metrics
+      JOB_AGENT_MAX_QUEUED_RUNS_GLOBAL: ${JOB_AGENT_LOAD_MAX_QUEUED_RUNS_GLOBAL:-5000}
+      JOB_AGENT_MAX_QUEUED_RUNS_PER_USER: ${JOB_AGENT_LOAD_MAX_QUEUED_RUNS_PER_USER:-5000}
+  worker:
+    environment:
+      JOB_AGENT_DATABASE_URL: postgresql://job_agent:job_agent_dev@postgres:5432/job_agent_load
+      JOB_AGENT_STREAM_NAME: job-agent:load-runs
+      JOB_AGENT_CONSUMER_GROUP: load-workers
+      JOB_AGENT_METRICS_PREFIX: job-agent:load-metrics
+      JOB_AGENT_PROVIDER_GLOBAL_LIMIT: ${JOB_AGENT_LOAD_PROVIDER_GLOBAL_LIMIT:-4}
+      JOB_AGENT_PROVIDER_PER_USER_LIMIT: ${JOB_AGENT_LOAD_PROVIDER_PER_USER_LIMIT:-2}

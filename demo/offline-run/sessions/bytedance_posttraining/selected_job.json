@@ -1,0 +1,16 @@
+{
+  "job_id": "raw_002",
+  "company": "ByteDance",
+  "title": "LLM Post-training Intern",
+  "desc": "Work on SFT, RLHF, LoRA, DPO, GRPO and reward model evaluation.",
+  "url": "https://example.com/posttraining",
+  "location": "Beijing",
+  "salary": "300-500/day",
+  "source": "bytedance",
+  "job_type": "intern",
+  "posted_date": "2026-07-08",
+  "fetched_at": "2026-07-09T01:00:00+08:00",
+  "lead_score": 88,
+  "lead_reason": "matched target keywords: SFT, RLHF, LoRA",
+  "risk_flags": []
+}

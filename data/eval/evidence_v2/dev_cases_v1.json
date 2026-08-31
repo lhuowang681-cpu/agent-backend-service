@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "corpus_id": "evidence-v2-development-corpus-v1.1",
+  "cases": [
+    {
+      "case_id": "dev-sparse-jd",
+      "slice_tags": ["sparse_jd"],
+      "jd_text": "我们正在寻找加入算法团队的同学。",
+      "resume_text": "参与过模型相关课程项目。",
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "dev-compound-a",
+      "slice_tags": ["compound_parent", "paraphrase"],
+      "paraphrase_group": "training-eval-deploy",
+      "jd_text": "要求独立完成 SFT 训练，并设计离线评测，能够部署推理服务。",
+      "resume_text": "负责 SFT 训练数据清洗、LoRA 微调与实验复现；参与离线评测指标讨论，但未独立设计评测方案；使用 FastAPI 部署过推理服务。",
+      "gold_atoms": [
+        {"atom_id": "sft_training", "jd_quote": "SFT 训练", "importance": "must"},
+        {"atom_id": "offline_eval", "jd_quote": "离线评测", "importance": "must"},
+        {"atom_id": "inference_deploy", "jd_quote": "部署推理服务", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "train-supported", "atom_id": "sft_training", "resume_quote": "负责 SFT 训练数据清洗、LoRA 微调与实验复现", "support_status": "supported", "level": "C1"},
+        {"link_id": "eval-partial", "atom_id": "offline_eval", "resume_quote": "参与离线评测指标讨论", "support_status": "partial", "level": "C1"},
+        {"link_id": "eval-contradiction", "atom_id": "offline_eval", "resume_quote": "未独立设计评测方案", "support_status": "contradictory", "level": "C1"},
+        {"link_id": "deploy-supported", "atom_id": "inference_deploy", "resume_quote": "使用 FastAPI 部署过推理服务", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "dev-compound-b",
+      "slice_tags": ["compound_parent", "paraphrase"],
+      "paraphrase_group": "training-eval-deploy",
+      "jd_text": "需要负责监督微调，搭建离线效果评估流程，并完成在线推理部署。",
+      "resume_text": "完成监督微调数据处理和 LoRA 训练；协助定义离线效果评估指标；独立完成在线推理部署与监控。",
+      "gold_atoms": [
+        {"atom_id": "sft_training", "jd_quote": "监督微调", "importance": "must"},
+        {"atom_id": "offline_eval", "jd_quote": "离线效果评估流程", "importance": "must"},
+        {"atom_id": "inference_deploy", "jd_quote": "在线推理部署", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "train-supported", "atom_id": "sft_training", "resume_quote": "完成监督微调数据处理和 LoRA 训练", "support_status": "supported", "level": "C1"},
+        {"link_id": "eval-partial", "atom_id": "offline_eval", "resume_quote": "协助定义离线效果评估指标", "support_status": "partial", "level": "C1"},
+        {"link_id": "deploy-supported", "atom_id": "inference_deploy", "resume_quote": "独立完成在线推理部署与监控", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "dev-nice",
+      "slice_tags": ["nice"],
+      "jd_text": "必须掌握 Python，具备模型训练经验；熟悉 CUDA 优化者优先。",
+      "resume_text": "使用 Python 和 PyTorch 完成模型训练流水线，尚未做过 CUDA kernel 优化。",
+      "gold_atoms": [
+        {"atom_id": "python", "jd_quote": "掌握 Python", "importance": "must"},
+        {"atom_id": "model_training", "jd_quote": "模型训练经验", "importance": "must"},
+        {"atom_id": "cuda", "jd_quote": "CUDA 优化", "importance": "nice"}
+      ],
+      "gold_links": [
+        {"link_id": "python-supported", "atom_id": "python", "resume_quote": "使用 Python", "support_status": "supported", "level": "C1"},
+        {"link_id": "training-supported", "atom_id": "model_training", "resume_quote": "完成模型训练流水线", "support_status": "supported", "level": "C1"},
+        {"link_id": "cuda-contradiction", "atom_id": "cuda", "resume_quote": "尚未做过 CUDA kernel 优化", "support_status": "contradictory", "level": "C1"}
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "dev-hard-gate",
+      "slice_tags": ["hard_gate"],
+      "jd_text": "必须有分布式训练实战经验；要求掌握 PyTorch，并能够分析训练稳定性。",
+      "resume_text": "熟练使用 PyTorch，分析过 loss spike 与梯度异常；没有分布式训练实战经验。",
+      "gold_atoms": [
+        {"atom_id": "distributed", "jd_quote": "分布式训练实战经验", "importance": "must", "hard_gate": true},
+        {"atom_id": "pytorch", "jd_quote": "掌握 PyTorch", "importance": "must"},
+        {"atom_id": "stability", "jd_quote": "分析训练稳定性", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "distributed-contradiction", "atom_id": "distributed", "resume_quote": "没有分布式训练实战经验", "support_status": "contradictory", "level": "C1"},
+        {"link_id": "pytorch-supported", "atom_id": "pytorch", "resume_quote": "熟练使用 PyTorch", "support_status": "supported", "level": "C1"},
+        {"link_id": "stability-supported", "atom_id": "stability", "resume_quote": "分析过 loss spike 与梯度异常", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "dev-partial",
+      "slice_tags": ["partial"],
+      "jd_text": "要求独立设计数据策略，负责奖励模型训练，并建立自动化评测。",
+      "resume_text": "参与数据策略讨论；负责奖励模型训练与实验记录；独立建立自动化评测脚本。",
+      "gold_atoms": [
+        {"atom_id": "data_strategy", "jd_quote": "独立设计数据策略", "importance": "must"},
+        {"atom_id": "reward_model", "jd_quote": "奖励模型训练", "importance": "must"},
+        {"atom_id": "auto_eval", "jd_quote": "自动化评测", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "strategy-partial", "atom_id": "data_strategy", "resume_quote": "参与数据策略讨论", "support_status": "partial", "level": "C1"},
+        {"link_id": "reward-supported", "atom_id": "reward_model", "resume_quote": "负责奖励模型训练与实验记录", "support_status": "supported", "level": "C1"},
+        {"link_id": "eval-supported", "atom_id": "auto_eval", "resume_quote": "独立建立自动化评测脚本", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "dev-contradiction",
+      "slice_tags": ["contradiction"],
+      "jd_text": "要求主导 RLHF 项目，掌握 DPO 训练，并具备线上服务经验。",
+      "resume_text": "作为成员参与 RLHF 项目，但未主导；独立完成 DPO 训练；维护过线上推理服务。",
+      "gold_atoms": [
+        {"atom_id": "rlhf_lead", "jd_quote": "主导 RLHF 项目", "importance": "must"},
+        {"atom_id": "dpo", "jd_quote": "DPO 训练", "importance": "must"},
+        {"atom_id": "online_service", "jd_quote": "线上服务经验", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "rlhf-partial", "atom_id": "rlhf_lead", "resume_quote": "作为成员参与 RLHF 项目", "support_status": "partial", "level": "C1"},
+        {"link_id": "rlhf-contradiction", "atom_id": "rlhf_lead", "resume_quote": "未主导", "support_status": "contradictory", "level": "C1"},
+        {"link_id": "dpo-supported", "atom_id": "dpo", "resume_quote": "独立完成 DPO 训练", "support_status": "supported", "level": "C1"},
+        {"link_id": "service-supported", "atom_id": "online_service", "resume_quote": "维护过线上推理服务", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "dev-generated-source",
+      "slice_tags": ["generated_source_rejection"],
+      "jd_text": "要求精通 CUDA，掌握 Python，并有模型训练经验。",
+      "resume_text": "使用 Python 完成模型训练。AI 生成建议（非候选人事实）：精通 CUDA。",
+      "gold_atoms": [
+        {"atom_id": "cuda", "jd_quote": "精通 CUDA", "importance": "must"},
+        {"atom_id": "python", "jd_quote": "掌握 Python", "importance": "must"},
+        {"atom_id": "model_training", "jd_quote": "模型训练经验", "importance": "must"}
+      ],
+      "gold_links": [
+        {"link_id": "python-supported", "atom_id": "python", "resume_quote": "使用 Python", "support_status": "supported", "level": "C1"},
+        {"link_id": "training-supported", "atom_id": "model_training", "resume_quote": "完成模型训练", "support_status": "supported", "level": "C1"}
+      ],
+      "expected_fit_band": "medium"
+    }
+  ]
+}

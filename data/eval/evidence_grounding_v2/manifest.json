@@ -1,0 +1,57 @@
+{
+  "dataset_name": "evidence_grounding_v2",
+  "dataset_version": "pilot-ai-draft-v1",
+  "schema_version": "evidence-grounding-v2.0",
+  "annotation_guide_version": "v1",
+  "pilot_file": "pilot.jsonl",
+  "pilot_sha256": "d342b84865f0023dd0e4269514f0232231bb003d2d155decb8c5ee51afa789b8",
+  "case_count": 10,
+  "requirement_unit_count": 30,
+  "label_provenance": "ai_draft",
+  "review_status": "pending_human_review",
+  "ai_second_review": {
+    "ledger_file": "pilot_ai_second_review.jsonl",
+    "ledger_sha256": "5fa71a58ec691a60dcc5dcbcd50356984c1992cad3ddc5fbeed880575074f500",
+    "overlay_file": "pilot_ai_review_overlay.json",
+    "overlay_sha256": "9618bdfe2aef514cf91d4420e5817fa4d0674839894a136b64206b5f63900904",
+    "spot_check_file": "pilot_human_spot_check.md",
+    "spot_check_sha256": "2dd5b3897a3fd999cc341b8c94e5ee35352e011d86d4be635c9d4d3739ab73cd",
+    "reviewed_units": 30,
+    "proposed_changes": 1,
+    "status": "pending_human_spot_check"
+  },
+  "human_spot_check": {
+    "adjudication_file": "pilot_human_adjudication.json",
+    "adjudication_sha256": "2c9ef722f7b1c585921d71cb8067641170e71b80eee597a15fcd34ea8f140d44",
+    "label_overlay_file": "pilot_human_spot_check_overlay.json",
+    "label_overlay_sha256": "9a906ff55e681b6bfbbaf327cb343a4534f6b9a048005788b8b00d3e8c70b21c",
+    "guide_amendment_file": "annotation_guide_v1_1_amendment.md",
+    "guide_amendment_sha256": "d82ddb63fc8c83cf90228169a3cc7c73631a3eb9e43b8dff988e68259c964c8a",
+    "checked_units": 6,
+    "unchecked_units": 24,
+    "confirmed_changes": 2,
+    "confirmed_keeps": 4,
+    "status": "human_spot_checked_partial"
+  },
+  "pilot_v1_1_candidate": {
+    "candidate_file": "pilot_v1_1_candidate.jsonl",
+    "candidate_sha256": "97ec97156aaf8e3dcae76daeeed89510d5939918fd95f176a7fd572c8b68712e",
+    "candidate_manifest_file": "pilot_v1_1_candidate_manifest.json",
+    "candidate_manifest_sha256": "7131eca7960e15ee3358cae877d5e35bc0853a5fd0cb01664a7dac271ef3beb1",
+    "posthoc_metrics_file": "output/private/evidence_grounding_v2/pilot_v1_1_posthoc/metrics.json",
+    "posthoc_metrics_sha256": "d104a688de6432528c10ef41d409218065001ad9c4901be53e80a2d85cf13f5a",
+    "posthoc_report_file": "output/private/evidence_grounding_v2/pilot_v1_1_posthoc/report.md",
+    "posthoc_report_sha256": "205e77074a853d9724f5bd010e151f1d3ddb9c1007cc27815fdffbf57c8f1cc9",
+    "new_api_calls": 0,
+    "selected_next_stage_candidate": "C",
+    "rejected_variant": "D",
+    "retained_lower_bound": "E",
+    "status": "posthoc_pilot_candidate_selection"
+  },
+  "allowed_claim": "runner_and_metric_diagnostic_only",
+  "forbidden_claims": [
+    "human_gold_benchmark",
+    "frozen_heldout_result",
+    "production_quality_improvement"
+  ]
+}

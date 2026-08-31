@@ -1,0 +1,81 @@
+{
+  "schema_version": "evidence-grounding-human-spot-check-v1",
+  "base_file": "pilot.jsonl",
+  "base_sha256": "d342b84865f0023dd0e4269514f0232231bb003d2d155decb8c5ee51afa789b8",
+  "base_annotation_guide": "v1",
+  "adjudication_date": "2026-07-26",
+  "review_status": "human_spot_checked_partial",
+  "checked_units": 6,
+  "unchecked_units": 24,
+  "human_confirmed_changes": 2,
+  "human_confirmed_keeps": 4,
+  "decisions": [
+    {
+      "sample_number": 1,
+      "case_id": "pilot-tool-005",
+      "requirement_id": "req_classifier",
+      "original_level": "C3",
+      "ai_second_review_level": "C1",
+      "human_level": "C1",
+      "decision": "change",
+      "user_response": "同意C1",
+      "reason": "A quantified result without an attributed candidate action is insufficient for C3."
+    },
+    {
+      "sample_number": 2,
+      "case_id": "pilot-negation-003",
+      "requirement_id": "req_data_pipeline",
+      "original_level": "C3",
+      "ai_second_review_level": "C3",
+      "human_level": "C3",
+      "decision": "keep",
+      "user_response": "认可C3",
+      "reason": "The directly relevant 100k-record processing scale is accepted as a C3 quantitative result."
+    },
+    {
+      "sample_number": 3,
+      "case_id": "pilot-rpa-008",
+      "requirement_id": "req_observability",
+      "original_level": "C2",
+      "ai_second_review_level": "C2",
+      "human_level": "C2",
+      "decision": "keep",
+      "user_response": "满足",
+      "reason": "Persisted failure logs are accepted as a basic observability practice, without implying metrics, tracing, or alerting."
+    },
+    {
+      "sample_number": 4,
+      "case_id": "pilot-posttrain-009",
+      "requirement_id": "req_data_generation",
+      "original_level": "C3",
+      "ai_second_review_level": "C3",
+      "human_level": "C3",
+      "decision": "keep",
+      "user_response": "明确",
+      "reason": "The data generator and 2,000 labeled samples are accepted as directly linked evidence."
+    },
+    {
+      "sample_number": 5,
+      "case_id": "pilot-learning-002",
+      "requirement_id": "req_grpo",
+      "original_level": "C1",
+      "ai_second_review_level": "C1",
+      "human_level": "C2",
+      "decision": "change",
+      "user_response": "算C2吧",
+      "reason": "A successfully reproduced runnable GRPO training example is accepted as limited hands-on practice and a concrete artifact, but not independent experiment design."
+    },
+    {
+      "sample_number": 6,
+      "case_id": "pilot-ownership-010",
+      "requirement_id": "req_agent_ownership",
+      "original_level": "None",
+      "ai_second_review_level": "None",
+      "human_level": "None",
+      "decision": "keep",
+      "user_response": "保持None",
+      "reason": "The resume explicitly attributes the core planner implementation to another person."
+    }
+  ],
+  "fact_boundary": "This is a six-unit human spot check. The dataset remains ai_draft/pending_human_review and must not be described as human_gold or frozen."
+}

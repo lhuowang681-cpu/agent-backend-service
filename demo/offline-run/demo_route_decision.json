@@ -1,0 +1,11 @@
+{
+  "intent": "mock_interview",
+  "required_artifacts": [
+    "07_interview_grilling.md",
+    "08_answer_cards.md"
+  ],
+  "missing_artifacts": [],
+  "runnable": true,
+  "next_step": "run_mock_interview",
+  "message": "Ready to execute run_mock_interview."
+}

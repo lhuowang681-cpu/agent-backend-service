@@ -1,0 +1,22 @@
+{
+  "dataset_name": "evidence_grounding_v4_direct_jd",
+  "dataset_version": "direct-jd-synthetic-sidecar-v1",
+  "grounding_dataset": "data/eval/evidence_grounding_v3_dev/dev_120.jsonl",
+  "grounding_dataset_sha256": "8ef8ccd370ea223bb8358fddc54d9ba8cee44060b00dd8cb283d7fc100aedabe",
+  "raw_jd_sidecar": "raw_jd_120.jsonl",
+  "raw_jd_sidecar_sha256": "9fb9f6887cb96ad6119a47a4390af9364b0c9f9e9e0a44528fccc1d7b9868fc9",
+  "composite_dataset_sha256": "1d7cef2aa860e9c659e72920603eacc54fc50547a8e517da7fb89418c4ebee12",
+  "case_count": 40,
+  "requirement_unit_count": 120,
+  "raw_jd_true_requirement_count": 120,
+  "raw_jd_background_sections_per_case": 2,
+  "source_group_count": 40,
+  "label_provenance": "deterministic_synthetic_template_draft",
+  "human_reviewed_units": 0,
+  "allowed_claim": "synthetic_direct_jd_pipeline_ablation_only",
+  "forbidden_claims": [
+    "human_gold_benchmark",
+    "real_raw_jd_generalization",
+    "production_accuracy_improvement"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "schema_version": "evidence-grounding-label-overlay-v1",
+  "base_file": "pilot.jsonl",
+  "base_sha256": "d342b84865f0023dd0e4269514f0232231bb003d2d155decb8c5ee51afa789b8",
+  "adjudication_file": "pilot_human_adjudication.json",
+  "status": "next_pilot_candidate_pending_full_human_review",
+  "changes": [
+    {
+      "case_id": "pilot-tool-005",
+      "requirement_id": "req_classifier",
+      "field": "gold_level",
+      "from": "C3",
+      "to": "C1"
+    },
+    {
+      "case_id": "pilot-learning-002",
+      "requirement_id": "req_grpo",
+      "field": "gold_level",
+      "from": "C1",
+      "to": "C2"
+    }
+  ],
+  "confirmed_unchanged": [
+    {
+      "case_id": "pilot-negation-003",
+      "requirement_id": "req_data_pipeline",
+      "level": "C3"
+    },
+    {
+      "case_id": "pilot-rpa-008",
+      "requirement_id": "req_observability",
+      "level": "C2"
+    },
+    {
+      "case_id": "pilot-posttrain-009",
+      "requirement_id": "req_data_generation",
+      "level": "C3"
+    },
+    {
+      "case_id": "pilot-ownership-010",
+      "requirement_id": "req_agent_ownership",
+      "level": "None"
+    }
+  ],
+  "application_rule": "Apply only when building the next pilot candidate. Do not rewrite the dataset/hash used by the completed 2026-07-26 API Pilot."
+}

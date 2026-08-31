@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "corpus_revision": "evidence-v2-development-corpus-v1.1",
+  "previous_corpus_hash": "94df5d7183412cbddc2006a015abd4f40e8863d63425aa4f8e0f4d7ace98d910",
+  "reason": "Development-label correction after auditing against the frozen release evidence-contract.md: resume self-report without code, logs, experiments, design documents, metrics, or rollout records cannot be labeled C2/C3.",
+  "scope": "All positive and contradictory links previously labeled C2/C3 were lowered to C1. Support status, atom labels, source quotes, and expected fit bands were not changed.",
+  "timing": "Development split only; no held-out corpus had been frozen or run.",
+  "affected_reports": [
+    "glm-5.2-dev-full-v2.json",
+    "glm-5.2-dev-full-production-v1.json",
+    "glm-5.2-dev-full-production-v2.json"
+  ]
+}

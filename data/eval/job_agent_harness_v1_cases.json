@@ -1,0 +1,42 @@
+[
+  {
+    "case_id": "agent-algorithm-intern-v1",
+    "role_family": "agent_algorithm",
+    "target_role": "Agent / LLM Algorithm Intern",
+    "cities": ["Beijing", "Shanghai"],
+    "keywords": ["RLHF", "alignment", "Agent"],
+    "min_candidates": 1,
+    "resume_fixture": "data/fixtures/resume_seed.md",
+    "mock_answers": [
+      "I inspect evaluation configs, trajectory logs, metrics, and checkpoint state before changing the Agent policy."
+    ],
+    "desired_tracker_status": "applied"
+  },
+  {
+    "case_id": "llm-application-intern-v1",
+    "role_family": "llm_application",
+    "target_role": "LLM Application / Platform Intern",
+    "cities": ["Shanghai", "Beijing"],
+    "keywords": ["LLM", "evaluation", "platform"],
+    "min_candidates": 1,
+    "resume_fixture": "data/fixtures/resume_seed.md",
+    "mock_answers": [
+      "I would start from a baseline, inspect request logs and evaluation metrics, then compare retrieval and prompt changes."
+    ],
+    "desired_tracker_status": "applied"
+  },
+  {
+    "case_id": "backend-data-control-v1",
+    "role_family": "backend_data",
+    "target_role": "Python Backend / Data Intern",
+    "cities": ["Shanghai", "Chengdu"],
+    "keywords": ["Python", "API", "database"],
+    "min_candidates": 1,
+    "resume_fixture": "data/fixtures/resume_seed.md",
+    "mock_answers": [
+      "I would check API logs, database metrics, cache behavior, and a reproducible test before claiming the issue is fixed."
+    ],
+    "desired_tracker_status": "applied",
+    "expected_semantic_outcome": "stop_and_reselect"
+  }
+]

@@ -1,0 +1,2382 @@
+{
+  "schema_version": 1,
+  "corpus_id": "evidence-v2-held_out-corpus-v4",
+  "cases": [
+    {
+      "case_id": "hel-negation_scope-01",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ],
+      "jd_text": "要求支持多模态输入、训练视觉编码器并优化图文检索。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "negation_scope_1_multimodal_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「多模态输入」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "negation_scope_1_vision_encoder_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "negation_scope_1_cross_modal_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「图文检索优化」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "multimodal",
+          "jd_quote": "支持多模态输入",
+          "importance": "must"
+        },
+        {
+          "atom_id": "vision_encoder",
+          "jd_quote": "训练视觉编码器",
+          "importance": "must"
+        },
+        {
+          "atom_id": "cross_modal",
+          "jd_quote": "优化图文检索",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "multimodal-supported-c2",
+          "atom_id": "multimodal",
+          "resume_quote": "实验记录：围绕「多模态输入」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "negation_scope_1_multimodal_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "vision_encoder-supported-c2",
+          "atom_id": "vision_encoder",
+          "resume_quote": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "negation_scope_1_vision_encoder_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "cross_modal-supported-c2",
+          "atom_id": "cross_modal",
+          "resume_quote": "实验记录：围绕「图文检索优化」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "negation_scope_1_cross_modal_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-negation_scope-02",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ],
+      "jd_text": "要求支持多模态输入、训练视觉编码器并优化图文检索。",
+      "resume_text": "简历自述：完整负责了「多模态输入」；简历自述：完整负责了「视觉编码器训练」；简历自述：完整负责了「图文检索优化」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "multimodal",
+          "jd_quote": "支持多模态输入",
+          "importance": "must"
+        },
+        {
+          "atom_id": "vision_encoder",
+          "jd_quote": "训练视觉编码器",
+          "importance": "must"
+        },
+        {
+          "atom_id": "cross_modal",
+          "jd_quote": "优化图文检索",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "multimodal-supported-c1",
+          "atom_id": "multimodal",
+          "resume_quote": "简历自述：完整负责了「多模态输入」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "vision_encoder-supported-c1",
+          "atom_id": "vision_encoder",
+          "resume_quote": "简历自述：完整负责了「视觉编码器训练」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "cross_modal-supported-c1",
+          "atom_id": "cross_modal",
+          "resume_quote": "简历自述：完整负责了「图文检索优化」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-negation_scope-03",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ],
+      "jd_text": "要求支持多模态输入、训练视觉编码器并优化图文检索。",
+      "resume_text": "简历自述：仅协助了「多模态输入」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "negation_scope_3_vision_encoder_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "multimodal",
+          "jd_quote": "支持多模态输入",
+          "importance": "must"
+        },
+        {
+          "atom_id": "vision_encoder",
+          "jd_quote": "训练视觉编码器",
+          "importance": "must"
+        },
+        {
+          "atom_id": "cross_modal",
+          "jd_quote": "优化图文检索",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "multimodal-partial-c1",
+          "atom_id": "multimodal",
+          "resume_quote": "简历自述：仅协助了「多模态输入」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "vision_encoder-supported-c2",
+          "atom_id": "vision_encoder",
+          "resume_quote": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "negation_scope_3_vision_encoder_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-negation_scope-04",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ],
+      "jd_text": "要求支持多模态输入、训练视觉编码器并优化图文检索。",
+      "resume_text": "简历自述：没有实际负责「多模态输入」。",
+      "evidence_sources": [
+        {
+          "source_key": "negation_scope_4_vision_encoder_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "negation_scope_4_cross_modal_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「图文检索优化」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "multimodal",
+          "jd_quote": "支持多模态输入",
+          "importance": "must"
+        },
+        {
+          "atom_id": "vision_encoder",
+          "jd_quote": "训练视觉编码器",
+          "importance": "must"
+        },
+        {
+          "atom_id": "cross_modal",
+          "jd_quote": "优化图文检索",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "multimodal-contradictory-c1",
+          "atom_id": "multimodal",
+          "resume_quote": "简历自述：没有实际负责「多模态输入」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "vision_encoder-supported-c2",
+          "atom_id": "vision_encoder",
+          "resume_quote": "实验记录：围绕「视觉编码器训练」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "negation_scope_4_vision_encoder_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "cross_modal-supported-c3",
+          "atom_id": "cross_modal",
+          "resume_quote": "生产报告：「图文检索优化」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "negation_scope_4_cross_modal_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-negation_scope-05",
+      "family_id": "negation_scope",
+      "slice_tags": [
+        "negation",
+        "scope"
+      ],
+      "jd_text": "要求支持多模态输入、训练视觉编码器并优化图文检索。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "negation_scope_5_multimodal_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「多模态输入」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "multimodal",
+          "jd_quote": "支持多模态输入",
+          "importance": "must"
+        },
+        {
+          "atom_id": "vision_encoder",
+          "jd_quote": "训练视觉编码器",
+          "importance": "must"
+        },
+        {
+          "atom_id": "cross_modal",
+          "jd_quote": "优化图文检索",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "multimodal-supported-c3",
+          "atom_id": "multimodal",
+          "resume_quote": "生产报告：「多模态输入」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "negation_scope_5_multimodal_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-span_boundaries-01",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ],
+      "jd_text": "需要独立搭建端到端评测平台、维护指标口径并分析失败样本。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "span_boundaries_1_eval_platform_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「端到端评测平台」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "span_boundaries_1_metric_contract_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "span_boundaries_1_bad_cases_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「失败样本分析」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_platform",
+          "jd_quote": "独立搭建端到端评测平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_contract",
+          "jd_quote": "维护指标口径",
+          "importance": "must"
+        },
+        {
+          "atom_id": "bad_cases",
+          "jd_quote": "分析失败样本",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_platform-supported-c2",
+          "atom_id": "eval_platform",
+          "resume_quote": "实验记录：围绕「端到端评测平台」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "span_boundaries_1_eval_platform_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "metric_contract-supported-c2",
+          "atom_id": "metric_contract",
+          "resume_quote": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "span_boundaries_1_metric_contract_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "bad_cases-supported-c2",
+          "atom_id": "bad_cases",
+          "resume_quote": "实验记录：围绕「失败样本分析」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "span_boundaries_1_bad_cases_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-span_boundaries-02",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ],
+      "jd_text": "需要独立搭建端到端评测平台、维护指标口径并分析失败样本。",
+      "resume_text": "简历自述：完整负责了「端到端评测平台」；简历自述：完整负责了「指标口径」；简历自述：完整负责了「失败样本分析」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_platform",
+          "jd_quote": "独立搭建端到端评测平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_contract",
+          "jd_quote": "维护指标口径",
+          "importance": "must"
+        },
+        {
+          "atom_id": "bad_cases",
+          "jd_quote": "分析失败样本",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_platform-supported-c1",
+          "atom_id": "eval_platform",
+          "resume_quote": "简历自述：完整负责了「端到端评测平台」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_contract-supported-c1",
+          "atom_id": "metric_contract",
+          "resume_quote": "简历自述：完整负责了「指标口径」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "bad_cases-supported-c1",
+          "atom_id": "bad_cases",
+          "resume_quote": "简历自述：完整负责了「失败样本分析」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-span_boundaries-03",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ],
+      "jd_text": "需要独立搭建端到端评测平台、维护指标口径并分析失败样本。",
+      "resume_text": "简历自述：仅协助了「端到端评测平台」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "span_boundaries_3_metric_contract_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_platform",
+          "jd_quote": "独立搭建端到端评测平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_contract",
+          "jd_quote": "维护指标口径",
+          "importance": "must"
+        },
+        {
+          "atom_id": "bad_cases",
+          "jd_quote": "分析失败样本",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_platform-partial-c1",
+          "atom_id": "eval_platform",
+          "resume_quote": "简历自述：仅协助了「端到端评测平台」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_contract-supported-c2",
+          "atom_id": "metric_contract",
+          "resume_quote": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "span_boundaries_3_metric_contract_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-span_boundaries-04",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ],
+      "jd_text": "需要独立搭建端到端评测平台、维护指标口径并分析失败样本。",
+      "resume_text": "简历自述：没有实际负责「端到端评测平台」。",
+      "evidence_sources": [
+        {
+          "source_key": "span_boundaries_4_metric_contract_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "span_boundaries_4_bad_cases_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「失败样本分析」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_platform",
+          "jd_quote": "独立搭建端到端评测平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_contract",
+          "jd_quote": "维护指标口径",
+          "importance": "must"
+        },
+        {
+          "atom_id": "bad_cases",
+          "jd_quote": "分析失败样本",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_platform-contradictory-c1",
+          "atom_id": "eval_platform",
+          "resume_quote": "简历自述：没有实际负责「端到端评测平台」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_contract-supported-c2",
+          "atom_id": "metric_contract",
+          "resume_quote": "实验记录：围绕「指标口径」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "span_boundaries_4_metric_contract_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "bad_cases-supported-c3",
+          "atom_id": "bad_cases",
+          "resume_quote": "生产报告：「失败样本分析」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "span_boundaries_4_bad_cases_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-span_boundaries-05",
+      "family_id": "span_boundaries",
+      "slice_tags": [
+        "exact_span",
+        "broader_narrower_span"
+      ],
+      "jd_text": "需要独立搭建端到端评测平台、维护指标口径并分析失败样本。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "span_boundaries_5_eval_platform_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「端到端评测平台」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_platform",
+          "jd_quote": "独立搭建端到端评测平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_contract",
+          "jd_quote": "维护指标口径",
+          "importance": "must"
+        },
+        {
+          "atom_id": "bad_cases",
+          "jd_quote": "分析失败样本",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_platform-supported-c3",
+          "atom_id": "eval_platform",
+          "resume_quote": "生产报告：「端到端评测平台」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "span_boundaries_5_eval_platform_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-c1_claim_gate-01",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ],
+      "jd_text": "要求开发 Agent 工作流、实现工具路由并处理执行失败恢复。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c1_claim_gate_1_agent_flow_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「Agent 工作流」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c1_claim_gate_1_tool_routing_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c1_claim_gate_1_failure_recovery_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「失败恢复」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "agent_flow",
+          "jd_quote": "开发 Agent 工作流",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_routing",
+          "jd_quote": "实现工具路由",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "执行失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "agent_flow-supported-c2",
+          "atom_id": "agent_flow",
+          "resume_quote": "实验记录：围绕「Agent 工作流」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c1_claim_gate_1_agent_flow_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "tool_routing-supported-c2",
+          "atom_id": "tool_routing",
+          "resume_quote": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c1_claim_gate_1_tool_routing_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_recovery-supported-c2",
+          "atom_id": "failure_recovery",
+          "resume_quote": "实验记录：围绕「失败恢复」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c1_claim_gate_1_failure_recovery_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c1_claim_gate-02",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ],
+      "jd_text": "要求开发 Agent 工作流、实现工具路由并处理执行失败恢复。",
+      "resume_text": "简历自述：完整负责了「Agent 工作流」；简历自述：完整负责了「工具路由」；简历自述：完整负责了「失败恢复」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "agent_flow",
+          "jd_quote": "开发 Agent 工作流",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_routing",
+          "jd_quote": "实现工具路由",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "执行失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "agent_flow-supported-c1",
+          "atom_id": "agent_flow",
+          "resume_quote": "简历自述：完整负责了「Agent 工作流」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_routing-supported-c1",
+          "atom_id": "tool_routing",
+          "resume_quote": "简历自述：完整负责了「工具路由」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "failure_recovery-supported-c1",
+          "atom_id": "failure_recovery",
+          "resume_quote": "简历自述：完整负责了「失败恢复」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c1_claim_gate-03",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ],
+      "jd_text": "要求开发 Agent 工作流、实现工具路由并处理执行失败恢复。",
+      "resume_text": "简历自述：仅协助了「Agent 工作流」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "c1_claim_gate_3_tool_routing_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "agent_flow",
+          "jd_quote": "开发 Agent 工作流",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_routing",
+          "jd_quote": "实现工具路由",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "执行失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "agent_flow-partial-c1",
+          "atom_id": "agent_flow",
+          "resume_quote": "简历自述：仅协助了「Agent 工作流」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_routing-supported-c2",
+          "atom_id": "tool_routing",
+          "resume_quote": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c1_claim_gate_3_tool_routing_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c1_claim_gate-04",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ],
+      "jd_text": "要求开发 Agent 工作流、实现工具路由并处理执行失败恢复。",
+      "resume_text": "简历自述：没有实际负责「Agent 工作流」。",
+      "evidence_sources": [
+        {
+          "source_key": "c1_claim_gate_4_tool_routing_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c1_claim_gate_4_failure_recovery_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「失败恢复」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "agent_flow",
+          "jd_quote": "开发 Agent 工作流",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_routing",
+          "jd_quote": "实现工具路由",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "执行失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "agent_flow-contradictory-c1",
+          "atom_id": "agent_flow",
+          "resume_quote": "简历自述：没有实际负责「Agent 工作流」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_routing-supported-c2",
+          "atom_id": "tool_routing",
+          "resume_quote": "实验记录：围绕「工具路由」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c1_claim_gate_4_tool_routing_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_recovery-supported-c3",
+          "atom_id": "failure_recovery",
+          "resume_quote": "生产报告：「失败恢复」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c1_claim_gate_4_failure_recovery_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c1_claim_gate-05",
+      "family_id": "c1_claim_gate",
+      "slice_tags": [
+        "c1_only",
+        "resume_claim_gate"
+      ],
+      "jd_text": "要求开发 Agent 工作流、实现工具路由并处理执行失败恢复。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c1_claim_gate_5_agent_flow_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「Agent 工作流」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "agent_flow",
+          "jd_quote": "开发 Agent 工作流",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_routing",
+          "jd_quote": "实现工具路由",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "执行失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "agent_flow-supported-c3",
+          "atom_id": "agent_flow",
+          "resume_quote": "生产报告：「Agent 工作流」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c1_claim_gate_5_agent_flow_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-c2_experiment-01",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ],
+      "jd_text": "需要设计消融实验、维护实验追踪并解释指标变化。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c2_experiment_1_ablation_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「消融实验」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c2_experiment_1_tracking_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c2_experiment_1_metric_analysis_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「指标变化解释」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "ablation",
+          "jd_quote": "设计消融实验",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tracking",
+          "jd_quote": "实验追踪",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_analysis",
+          "jd_quote": "解释指标变化",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "ablation-supported-c2",
+          "atom_id": "ablation",
+          "resume_quote": "实验记录：围绕「消融实验」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c2_experiment_1_ablation_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "tracking-supported-c2",
+          "atom_id": "tracking",
+          "resume_quote": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c2_experiment_1_tracking_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "metric_analysis-supported-c2",
+          "atom_id": "metric_analysis",
+          "resume_quote": "实验记录：围绕「指标变化解释」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c2_experiment_1_metric_analysis_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c2_experiment-02",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ],
+      "jd_text": "需要设计消融实验、维护实验追踪并解释指标变化。",
+      "resume_text": "简历自述：完整负责了「消融实验」；简历自述：完整负责了「实验追踪」；简历自述：完整负责了「指标变化解释」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "ablation",
+          "jd_quote": "设计消融实验",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tracking",
+          "jd_quote": "实验追踪",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_analysis",
+          "jd_quote": "解释指标变化",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "ablation-supported-c1",
+          "atom_id": "ablation",
+          "resume_quote": "简历自述：完整负责了「消融实验」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "tracking-supported-c1",
+          "atom_id": "tracking",
+          "resume_quote": "简历自述：完整负责了「实验追踪」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_analysis-supported-c1",
+          "atom_id": "metric_analysis",
+          "resume_quote": "简历自述：完整负责了「指标变化解释」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c2_experiment-03",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ],
+      "jd_text": "需要设计消融实验、维护实验追踪并解释指标变化。",
+      "resume_text": "简历自述：仅协助了「消融实验」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "c2_experiment_3_tracking_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "ablation",
+          "jd_quote": "设计消融实验",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tracking",
+          "jd_quote": "实验追踪",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_analysis",
+          "jd_quote": "解释指标变化",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "ablation-partial-c1",
+          "atom_id": "ablation",
+          "resume_quote": "简历自述：仅协助了「消融实验」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "tracking-supported-c2",
+          "atom_id": "tracking",
+          "resume_quote": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c2_experiment_3_tracking_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c2_experiment-04",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ],
+      "jd_text": "需要设计消融实验、维护实验追踪并解释指标变化。",
+      "resume_text": "简历自述：没有实际负责「消融实验」。",
+      "evidence_sources": [
+        {
+          "source_key": "c2_experiment_4_tracking_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c2_experiment_4_metric_analysis_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「指标变化解释」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "ablation",
+          "jd_quote": "设计消融实验",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tracking",
+          "jd_quote": "实验追踪",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_analysis",
+          "jd_quote": "解释指标变化",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "ablation-contradictory-c1",
+          "atom_id": "ablation",
+          "resume_quote": "简历自述：没有实际负责「消融实验」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "tracking-supported-c2",
+          "atom_id": "tracking",
+          "resume_quote": "实验记录：围绕「实验追踪」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c2_experiment_4_tracking_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "metric_analysis-supported-c3",
+          "atom_id": "metric_analysis",
+          "resume_quote": "生产报告：「指标变化解释」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c2_experiment_4_metric_analysis_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c2_experiment-05",
+      "family_id": "c2_experiment",
+      "slice_tags": [
+        "c2",
+        "experiment_evidence"
+      ],
+      "jd_text": "需要设计消融实验、维护实验追踪并解释指标变化。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c2_experiment_5_ablation_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「消融实验」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "ablation",
+          "jd_quote": "设计消融实验",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tracking",
+          "jd_quote": "实验追踪",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_analysis",
+          "jd_quote": "解释指标变化",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "ablation-supported-c3",
+          "atom_id": "ablation",
+          "resume_quote": "生产报告：「消融实验」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c2_experiment_5_ablation_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-c3_production-01",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ],
+      "jd_text": "要求负责灰度发布、线上告警和事故复盘。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c3_production_1_canary_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「灰度发布」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c3_production_1_alerting_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c3_production_1_incident_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「事故复盘」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "canary",
+          "jd_quote": "灰度发布",
+          "importance": "must"
+        },
+        {
+          "atom_id": "alerting",
+          "jd_quote": "线上告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident",
+          "jd_quote": "事故复盘",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "canary-supported-c2",
+          "atom_id": "canary",
+          "resume_quote": "实验记录：围绕「灰度发布」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c3_production_1_canary_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "alerting-supported-c2",
+          "atom_id": "alerting",
+          "resume_quote": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c3_production_1_alerting_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "incident-supported-c2",
+          "atom_id": "incident",
+          "resume_quote": "实验记录：围绕「事故复盘」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c3_production_1_incident_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c3_production-02",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ],
+      "jd_text": "要求负责灰度发布、线上告警和事故复盘。",
+      "resume_text": "简历自述：完整负责了「灰度发布」；简历自述：完整负责了「线上告警」；简历自述：完整负责了「事故复盘」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "canary",
+          "jd_quote": "灰度发布",
+          "importance": "must"
+        },
+        {
+          "atom_id": "alerting",
+          "jd_quote": "线上告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident",
+          "jd_quote": "事故复盘",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "canary-supported-c1",
+          "atom_id": "canary",
+          "resume_quote": "简历自述：完整负责了「灰度发布」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "alerting-supported-c1",
+          "atom_id": "alerting",
+          "resume_quote": "简历自述：完整负责了「线上告警」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "incident-supported-c1",
+          "atom_id": "incident",
+          "resume_quote": "简历自述：完整负责了「事故复盘」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-c3_production-03",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ],
+      "jd_text": "要求负责灰度发布、线上告警和事故复盘。",
+      "resume_text": "简历自述：仅协助了「灰度发布」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "c3_production_3_alerting_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "canary",
+          "jd_quote": "灰度发布",
+          "importance": "must"
+        },
+        {
+          "atom_id": "alerting",
+          "jd_quote": "线上告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident",
+          "jd_quote": "事故复盘",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "canary-partial-c1",
+          "atom_id": "canary",
+          "resume_quote": "简历自述：仅协助了「灰度发布」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "alerting-supported-c2",
+          "atom_id": "alerting",
+          "resume_quote": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c3_production_3_alerting_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c3_production-04",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ],
+      "jd_text": "要求负责灰度发布、线上告警和事故复盘。",
+      "resume_text": "简历自述：没有实际负责「灰度发布」。",
+      "evidence_sources": [
+        {
+          "source_key": "c3_production_4_alerting_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "c3_production_4_incident_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「事故复盘」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "canary",
+          "jd_quote": "灰度发布",
+          "importance": "must"
+        },
+        {
+          "atom_id": "alerting",
+          "jd_quote": "线上告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident",
+          "jd_quote": "事故复盘",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "canary-contradictory-c1",
+          "atom_id": "canary",
+          "resume_quote": "简历自述：没有实际负责「灰度发布」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "alerting-supported-c2",
+          "atom_id": "alerting",
+          "resume_quote": "实验记录：围绕「线上告警」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "c3_production_4_alerting_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "incident-supported-c3",
+          "atom_id": "incident",
+          "resume_quote": "生产报告：「事故复盘」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c3_production_4_incident_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-c3_production-05",
+      "family_id": "c3_production",
+      "slice_tags": [
+        "c3",
+        "production_evidence"
+      ],
+      "jd_text": "要求负责灰度发布、线上告警和事故复盘。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "c3_production_5_canary_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「灰度发布」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "canary",
+          "jd_quote": "灰度发布",
+          "importance": "must"
+        },
+        {
+          "atom_id": "alerting",
+          "jd_quote": "线上告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident",
+          "jd_quote": "事故复盘",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "canary-supported-c3",
+          "atom_id": "canary",
+          "resume_quote": "生产报告：「灰度发布」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "c3_production_5_canary_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-role_title_noise-01",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ],
+      "jd_text": "需要主导推荐算法、建设特征平台并负责 A/B 实验。",
+      "resume_text": "浏览过的岗位标题：推荐算法主导负责人、特征平台专家。。",
+      "evidence_sources": [
+        {
+          "source_key": "role_title_noise_1_recommendation_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「推荐算法主导」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "role_title_noise_1_feature_platform_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "role_title_noise_1_ab_test_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「A/B 实验」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "recommendation",
+          "jd_quote": "主导推荐算法",
+          "importance": "must"
+        },
+        {
+          "atom_id": "feature_platform",
+          "jd_quote": "建设特征平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ab_test",
+          "jd_quote": "A/B 实验",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "recommendation-supported-c2",
+          "atom_id": "recommendation",
+          "resume_quote": "实验记录：围绕「推荐算法主导」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "role_title_noise_1_recommendation_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "feature_platform-supported-c2",
+          "atom_id": "feature_platform",
+          "resume_quote": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "role_title_noise_1_feature_platform_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "ab_test-supported-c2",
+          "atom_id": "ab_test",
+          "resume_quote": "实验记录：围绕「A/B 实验」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "role_title_noise_1_ab_test_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-role_title_noise-02",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ],
+      "jd_text": "需要主导推荐算法、建设特征平台并负责 A/B 实验。",
+      "resume_text": "简历自述：完整负责了「推荐算法主导」；简历自述：完整负责了「特征平台」；简历自述：完整负责了「A/B 实验」；浏览过的岗位标题：推荐算法主导负责人、特征平台专家。。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "recommendation",
+          "jd_quote": "主导推荐算法",
+          "importance": "must"
+        },
+        {
+          "atom_id": "feature_platform",
+          "jd_quote": "建设特征平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ab_test",
+          "jd_quote": "A/B 实验",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "recommendation-supported-c1",
+          "atom_id": "recommendation",
+          "resume_quote": "简历自述：完整负责了「推荐算法主导」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "feature_platform-supported-c1",
+          "atom_id": "feature_platform",
+          "resume_quote": "简历自述：完整负责了「特征平台」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "ab_test-supported-c1",
+          "atom_id": "ab_test",
+          "resume_quote": "简历自述：完整负责了「A/B 实验」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-role_title_noise-03",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ],
+      "jd_text": "需要主导推荐算法、建设特征平台并负责 A/B 实验。",
+      "resume_text": "简历自述：仅协助了「推荐算法主导」的一部分；浏览过的岗位标题：推荐算法主导负责人、特征平台专家。。",
+      "evidence_sources": [
+        {
+          "source_key": "role_title_noise_3_feature_platform_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "recommendation",
+          "jd_quote": "主导推荐算法",
+          "importance": "must"
+        },
+        {
+          "atom_id": "feature_platform",
+          "jd_quote": "建设特征平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ab_test",
+          "jd_quote": "A/B 实验",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "recommendation-partial-c1",
+          "atom_id": "recommendation",
+          "resume_quote": "简历自述：仅协助了「推荐算法主导」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "feature_platform-supported-c2",
+          "atom_id": "feature_platform",
+          "resume_quote": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "role_title_noise_3_feature_platform_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-role_title_noise-04",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ],
+      "jd_text": "需要主导推荐算法、建设特征平台并负责 A/B 实验。",
+      "resume_text": "简历自述：没有实际负责「推荐算法主导」；浏览过的岗位标题：推荐算法主导负责人、特征平台专家。。",
+      "evidence_sources": [
+        {
+          "source_key": "role_title_noise_4_feature_platform_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "role_title_noise_4_ab_test_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「A/B 实验」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "recommendation",
+          "jd_quote": "主导推荐算法",
+          "importance": "must"
+        },
+        {
+          "atom_id": "feature_platform",
+          "jd_quote": "建设特征平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ab_test",
+          "jd_quote": "A/B 实验",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "recommendation-contradictory-c1",
+          "atom_id": "recommendation",
+          "resume_quote": "简历自述：没有实际负责「推荐算法主导」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "feature_platform-supported-c2",
+          "atom_id": "feature_platform",
+          "resume_quote": "实验记录：围绕「特征平台」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "role_title_noise_4_feature_platform_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "ab_test-supported-c3",
+          "atom_id": "ab_test",
+          "resume_quote": "生产报告：「A/B 实验」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "role_title_noise_4_ab_test_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-role_title_noise-05",
+      "family_id": "role_title_noise",
+      "slice_tags": [
+        "role_title_noise",
+        "keyword_false_positive"
+      ],
+      "jd_text": "需要主导推荐算法、建设特征平台并负责 A/B 实验。",
+      "resume_text": "浏览过的岗位标题：推荐算法主导负责人、特征平台专家。。",
+      "evidence_sources": [
+        {
+          "source_key": "role_title_noise_5_recommendation_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「推荐算法主导」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "recommendation",
+          "jd_quote": "主导推荐算法",
+          "importance": "must"
+        },
+        {
+          "atom_id": "feature_platform",
+          "jd_quote": "建设特征平台",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ab_test",
+          "jd_quote": "A/B 实验",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "recommendation-supported-c3",
+          "atom_id": "recommendation",
+          "resume_quote": "生产报告：「推荐算法主导」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "role_title_noise_5_recommendation_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-gap_no_evidence-01",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ],
+      "jd_text": "要求掌握联邦学习、隐私计算和差分隐私。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "gap_no_evidence_1_federated_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「联邦学习」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "gap_no_evidence_1_privacy_compute_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "gap_no_evidence_1_differential_privacy_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「差分隐私」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "federated",
+          "jd_quote": "掌握联邦学习",
+          "importance": "must"
+        },
+        {
+          "atom_id": "privacy_compute",
+          "jd_quote": "隐私计算",
+          "importance": "must"
+        },
+        {
+          "atom_id": "differential_privacy",
+          "jd_quote": "差分隐私",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "federated-supported-c2",
+          "atom_id": "federated",
+          "resume_quote": "实验记录：围绕「联邦学习」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "gap_no_evidence_1_federated_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "privacy_compute-supported-c2",
+          "atom_id": "privacy_compute",
+          "resume_quote": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "gap_no_evidence_1_privacy_compute_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "differential_privacy-supported-c2",
+          "atom_id": "differential_privacy",
+          "resume_quote": "实验记录：围绕「差分隐私」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "gap_no_evidence_1_differential_privacy_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-gap_no_evidence-02",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ],
+      "jd_text": "要求掌握联邦学习、隐私计算和差分隐私。",
+      "resume_text": "简历自述：完整负责了「联邦学习」；简历自述：完整负责了「隐私计算」；简历自述：完整负责了「差分隐私」。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "federated",
+          "jd_quote": "掌握联邦学习",
+          "importance": "must"
+        },
+        {
+          "atom_id": "privacy_compute",
+          "jd_quote": "隐私计算",
+          "importance": "must"
+        },
+        {
+          "atom_id": "differential_privacy",
+          "jd_quote": "差分隐私",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "federated-supported-c1",
+          "atom_id": "federated",
+          "resume_quote": "简历自述：完整负责了「联邦学习」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "privacy_compute-supported-c1",
+          "atom_id": "privacy_compute",
+          "resume_quote": "简历自述：完整负责了「隐私计算」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "differential_privacy-supported-c1",
+          "atom_id": "differential_privacy",
+          "resume_quote": "简历自述：完整负责了「差分隐私」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-gap_no_evidence-03",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ],
+      "jd_text": "要求掌握联邦学习、隐私计算和差分隐私。",
+      "resume_text": "简历自述：仅协助了「联邦学习」的一部分。",
+      "evidence_sources": [
+        {
+          "source_key": "gap_no_evidence_3_privacy_compute_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "federated",
+          "jd_quote": "掌握联邦学习",
+          "importance": "must"
+        },
+        {
+          "atom_id": "privacy_compute",
+          "jd_quote": "隐私计算",
+          "importance": "must"
+        },
+        {
+          "atom_id": "differential_privacy",
+          "jd_quote": "差分隐私",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "federated-partial-c1",
+          "atom_id": "federated",
+          "resume_quote": "简历自述：仅协助了「联邦学习」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "privacy_compute-supported-c2",
+          "atom_id": "privacy_compute",
+          "resume_quote": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "gap_no_evidence_3_privacy_compute_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-gap_no_evidence-04",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ],
+      "jd_text": "要求掌握联邦学习、隐私计算和差分隐私。",
+      "resume_text": "简历自述：没有实际负责「联邦学习」。",
+      "evidence_sources": [
+        {
+          "source_key": "gap_no_evidence_4_privacy_compute_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "gap_no_evidence_4_differential_privacy_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「差分隐私」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "federated",
+          "jd_quote": "掌握联邦学习",
+          "importance": "must"
+        },
+        {
+          "atom_id": "privacy_compute",
+          "jd_quote": "隐私计算",
+          "importance": "must"
+        },
+        {
+          "atom_id": "differential_privacy",
+          "jd_quote": "差分隐私",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "federated-contradictory-c1",
+          "atom_id": "federated",
+          "resume_quote": "简历自述：没有实际负责「联邦学习」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "privacy_compute-supported-c2",
+          "atom_id": "privacy_compute",
+          "resume_quote": "实验记录：围绕「隐私计算」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "gap_no_evidence_4_privacy_compute_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "differential_privacy-supported-c3",
+          "atom_id": "differential_privacy",
+          "resume_quote": "生产报告：「差分隐私」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "gap_no_evidence_4_differential_privacy_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-gap_no_evidence-05",
+      "family_id": "gap_no_evidence",
+      "slice_tags": [
+        "no_evidence",
+        "gap"
+      ],
+      "jd_text": "要求掌握联邦学习、隐私计算和差分隐私。",
+      "resume_text": "候选人材料仅记录了与本岗位无关的校园活动。。",
+      "evidence_sources": [
+        {
+          "source_key": "gap_no_evidence_5_federated_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「联邦学习」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "federated",
+          "jd_quote": "掌握联邦学习",
+          "importance": "must"
+        },
+        {
+          "atom_id": "privacy_compute",
+          "jd_quote": "隐私计算",
+          "importance": "must"
+        },
+        {
+          "atom_id": "differential_privacy",
+          "jd_quote": "差分隐私",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "federated-supported-c3",
+          "atom_id": "federated",
+          "resume_quote": "生产报告：「联邦学习」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "gap_no_evidence_5_federated_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "hel-repeated_quote-01",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ],
+      "jd_text": "要求熟练使用 Python、编写单元测试并维护 CI 流水线。",
+      "resume_text": "技能关键词索引：Python / Python；CI / CI。。",
+      "evidence_sources": [
+        {
+          "source_key": "repeated_quote_1_python_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「Python 工程」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "repeated_quote_1_unit_test_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "repeated_quote_1_ci_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「CI 流水线」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "python",
+          "jd_quote": "熟练使用 Python",
+          "importance": "must"
+        },
+        {
+          "atom_id": "unit_test",
+          "jd_quote": "编写单元测试",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ci",
+          "jd_quote": "CI 流水线",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "python-supported-c2",
+          "atom_id": "python",
+          "resume_quote": "实验记录：围绕「Python 工程」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "repeated_quote_1_python_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "unit_test-supported-c2",
+          "atom_id": "unit_test",
+          "resume_quote": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "repeated_quote_1_unit_test_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "ci-supported-c2",
+          "atom_id": "ci",
+          "resume_quote": "实验记录：围绕「CI 流水线」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "repeated_quote_1_ci_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-repeated_quote-02",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ],
+      "jd_text": "要求熟练使用 Python、编写单元测试并维护 CI 流水线。",
+      "resume_text": "简历自述：完整负责了「Python 工程」；简历自述：完整负责了「单元测试」；简历自述：完整负责了「CI 流水线」；技能关键词索引：Python / Python；CI / CI。。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "python",
+          "jd_quote": "熟练使用 Python",
+          "importance": "must"
+        },
+        {
+          "atom_id": "unit_test",
+          "jd_quote": "编写单元测试",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ci",
+          "jd_quote": "CI 流水线",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "python-supported-c1",
+          "atom_id": "python",
+          "resume_quote": "简历自述：完整负责了「Python 工程」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "unit_test-supported-c1",
+          "atom_id": "unit_test",
+          "resume_quote": "简历自述：完整负责了「单元测试」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "ci-supported-c1",
+          "atom_id": "ci",
+          "resume_quote": "简历自述：完整负责了「CI 流水线」",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "hel-repeated_quote-03",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ],
+      "jd_text": "要求熟练使用 Python、编写单元测试并维护 CI 流水线。",
+      "resume_text": "简历自述：仅协助了「Python 工程」的一部分；技能关键词索引：Python / Python；CI / CI。。",
+      "evidence_sources": [
+        {
+          "source_key": "repeated_quote_3_unit_test_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "python",
+          "jd_quote": "熟练使用 Python",
+          "importance": "must"
+        },
+        {
+          "atom_id": "unit_test",
+          "jd_quote": "编写单元测试",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ci",
+          "jd_quote": "CI 流水线",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "python-partial-c1",
+          "atom_id": "python",
+          "resume_quote": "简历自述：仅协助了「Python 工程」的一部分",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "unit_test-supported-c2",
+          "atom_id": "unit_test",
+          "resume_quote": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "repeated_quote_3_unit_test_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-repeated_quote-04",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ],
+      "jd_text": "要求熟练使用 Python、编写单元测试并维护 CI 流水线。",
+      "resume_text": "简历自述：没有实际负责「Python 工程」；技能关键词索引：Python / Python；CI / CI。。",
+      "evidence_sources": [
+        {
+          "source_key": "repeated_quote_4_unit_test_c2",
+          "kind": "user_artifact",
+          "display_label": "实验材料",
+          "text": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤。该材料由用户显式选择，并保留可核验上下文。"
+        },
+        {
+          "source_key": "repeated_quote_4_ci_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「CI 流水线」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "python",
+          "jd_quote": "熟练使用 Python",
+          "importance": "must"
+        },
+        {
+          "atom_id": "unit_test",
+          "jd_quote": "编写单元测试",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ci",
+          "jd_quote": "CI 流水线",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "python-contradictory-c1",
+          "atom_id": "python",
+          "resume_quote": "简历自述：没有实际负责「Python 工程」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "unit_test-supported-c2",
+          "atom_id": "unit_test",
+          "resume_quote": "实验记录：围绕「单元测试」记录了 baseline、对照实验、失败样本与复现步骤",
+          "source_key": "repeated_quote_4_unit_test_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "ci-supported-c3",
+          "atom_id": "ci",
+          "resume_quote": "生产报告：「CI 流水线」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "repeated_quote_4_ci_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "hel-repeated_quote-05",
+      "family_id": "repeated_quote",
+      "slice_tags": [
+        "repeated_quote",
+        "ambiguous_offset"
+      ],
+      "jd_text": "要求熟练使用 Python、编写单元测试并维护 CI 流水线。",
+      "resume_text": "技能关键词索引：Python / Python；CI / CI。。",
+      "evidence_sources": [
+        {
+          "source_key": "repeated_quote_5_python_c3",
+          "kind": "user_artifact",
+          "display_label": "生产审计材料",
+          "text": "生产报告：「Python 工程」已灰度上线 14 天，并记录 p95、告警与回滚结果。该材料由用户显式选择，并保留可核验上下文。"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "python",
+          "jd_quote": "熟练使用 Python",
+          "importance": "must"
+        },
+        {
+          "atom_id": "unit_test",
+          "jd_quote": "编写单元测试",
+          "importance": "must"
+        },
+        {
+          "atom_id": "ci",
+          "jd_quote": "CI 流水线",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "python-supported-c3",
+          "atom_id": "python",
+          "resume_quote": "生产报告：「Python 工程」已灰度上线 14 天，并记录 p95、告警与回滚结果",
+          "source_key": "repeated_quote_5_python_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+[
+  {
+    "source": "boss_zhipin",
+    "company": "GenericBackend",
+    "title": "Python Backend Intern",
+    "desc": "Build Python Web APIs, database models, and cache layers.",
+    "url": "https://example.com/backend",
+    "location": "Shanghai",
+    "salary": "200-300/day",
+    "job_type": "intern",
+    "posted_date": "2026-07-08",
+    "fetched_at": "2026-07-09T01:00:00+08:00",
+    "lead_score": 95,
+    "lead_reason": "internship/campus signal",
+    "risk_flags": [
+      "weak_keyword_match"
+    ]
+  },
+  {
+    "source": "bytedance",
+    "company": "ByteDance",
+    "title": "LLM Post-training Intern",
+    "desc": "Work on SFT, RLHF, LoRA, DPO, GRPO and reward model evaluation.",
+    "url": "https://example.com/posttraining",
+    "location": "Beijing",
+    "salary": "300-500/day",
+    "job_type": "intern",
+    "posted_date": "2026-07-08",
+    "fetched_at": "2026-07-09T01:00:00+08:00",
+    "lead_score": 88,
+    "lead_reason": "matched target keywords: SFT, RLHF, LoRA",
+    "risk_flags": []
+  },
+  {
+    "source": "company_portal",
+    "company": "MiniMax",
+    "title": "LLM Alignment Intern",
+    "desc": "Support instruction tuning, preference data cleaning, reward model evaluation, and safety alignment analysis.",
+    "url": "https://example.com/alignment",
+    "location": "Shanghai",
+    "salary": "",
+    "job_type": "intern",
+    "posted_date": "",
+    "fetched_at": "2026-07-09T01:00:00+08:00",
+    "lead_score": 82,
+    "lead_reason": "matched target keywords: alignment, reward model",
+    "risk_flags": []
+  }
+]

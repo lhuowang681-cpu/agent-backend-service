@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "revision": 2,
+  "user_id": "default-user",
+  "created": "2026-07-31T06:14:37.500320+00:00",
+  "updated": "2026-07-31T06:33:32.095171+00:00",
+  "applications": [
+    {
+      "id": "app-001",
+      "job_id": "raw_002",
+      "company": "ByteDance",
+      "title": "LLM Post-training Intern",
+      "city": "Beijing",
+      "url": "https://example.com/posttraining",
+      "source": "bytedance",
+      "current_state": "to_apply",
+      "verdict": "weak fit",
+      "fit_score": 0.6667,
+      "session_dir": "demo\\offline-run\\sessions\\bytedance_posttraining",
+      "artifact_paths": {
+        "selected_job": "selected_job.json",
+        "structured_jd": "01_jd_structured.json",
+        "evidence_mapping": "02_evidence_mapping.json",
+        "fit_verdict": "03_fit_verdict.json",
+        "action_suggestion": "04_action_suggestion.md",
+        "verdict_route": "05_verdict_route.json",
+        "targeted_resume": "06_targeted_resume.md",
+        "interview_grilling": "07_interview_grilling.md",
+        "answer_cards": "08_answer_cards.md",
+        "mock_interview_plan": "09_mock_interview_plan.md",
+        "mock_interview_live": "10_mock_interview_live.md",
+        "tracker": "tracker.json"
+      },
+      "tags": [],
+      "notes": "tracked by Session Orchestrator",
+      "next_deadline": null,
+      "state_history": [
+        {
+          "state": "to_apply",
+          "timestamp": "2026-07-31T06:14:37.499819+00:00",
+          "notes": "tracked by Session Orchestrator"
+        },
+        {
+          "state": "to_apply",
+          "timestamp": "2026-07-31T06:33:32.094169+00:00",
+          "notes": "tracked by Session Orchestrator"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "total": 1,
+    "by_state": {
+      "to_apply": 1
+    },
+    "offer_count": 0,
+    "response_rate": "0/0",
+    "interview_rate": "0/0",
+    "offer_rate": "0/0"
+  },
+  "reminders": [],
+  "tracker_revision": null,
+  "application_id": null,
+  "snapshot_of": null
+}

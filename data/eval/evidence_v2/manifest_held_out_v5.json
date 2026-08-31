@@ -1,0 +1,431 @@
+{
+  "schema_version": 1,
+  "manifest_id": "evidence_v2_hardening_held_out_v5",
+  "split": "held_out",
+  "corpus_id": "evidence-v2-hardening-held_out-corpus-v5",
+  "corpus_hash": "81d6771e8cf3b85ea23fb2900dd6ed475bda2ef4f8e71cf86db9f426855f6ba7",
+  "metric_version": "evidence_metrics_v1",
+  "case_inventory": [
+    {
+      "case_id": "v5-held-prefix_context_collision-01",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-02",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-03",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-04",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-05",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-01",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-02",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-03",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-04",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-05",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-01",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-02",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-03",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-04",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-05",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-held-readme_cap-01",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-held-readme_cap-02",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-held-readme_cap-03",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-held-readme_cap-04",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-held-readme_cap-05",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-01",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-02",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-03",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-04",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-05",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-01",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ]
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-02",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ]
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-03",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ]
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-04",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ]
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-05",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ]
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-01",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-02",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-03",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-04",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-05",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ]
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-01",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ]
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-02",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ]
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-03",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ]
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-04",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ]
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-05",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ]
+    }
+  ],
+  "required_slices": [
+    "artifact_cap",
+    "bilingual",
+    "c1_only",
+    "c2",
+    "c3",
+    "comparison_record",
+    "deduplication",
+    "delimiter",
+    "heldout_v5",
+    "incident_report",
+    "multi_link",
+    "near_duplicate",
+    "prefix_anchor",
+    "readme",
+    "repeated_quote",
+    "role_title_noise",
+    "sparse_jd",
+    "suffix_anchor",
+    "unicode"
+  ],
+  "variants": [
+    {
+      "variant_id": "direct_llm_judge",
+      "corpus_id": "evidence-v2-hardening-held_out-corpus-v5",
+      "corpus_hash": "81d6771e8cf3b85ea23fb2900dd6ed475bda2ef4f8e71cf86db9f426855f6ba7",
+      "jd_parser_version": "direct-judge-v1",
+      "evidence_prompt_version": "direct-judge-v5",
+      "fit_policy_version": "direct-judge-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "atomized_single_link",
+      "corpus_id": "evidence-v2-hardening-held_out-corpus-v5",
+      "corpus_hash": "81d6771e8cf3b85ea23fb2900dd6ed475bda2ef4f8e71cf86db9f426855f6ba7",
+      "jd_parser_version": "evidence-requirements-v2.1-quote-locator",
+      "evidence_prompt_version": "atomized-single-link-v5",
+      "fit_policy_version": "single-link-fit-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "full_evidence_v2",
+      "corpus_id": "evidence-v2-hardening-held_out-corpus-v5",
+      "corpus_hash": "81d6771e8cf3b85ea23fb2900dd6ed475bda2ef4f8e71cf86db9f426855f6ba7",
+      "jd_parser_version": "evidence-requirements-v2.1-quote-locator",
+      "evidence_prompt_version": "evidence-mapping-v2.2-support-level-separation",
+      "fit_policy_version": "fit_policy_v2_initial",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    }
+  ],
+  "held_out_frozen": true,
+  "synthetic_only": true
+}

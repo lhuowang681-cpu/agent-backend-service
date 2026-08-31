@@ -1,0 +1,34 @@
+{
+  "dataset_name": "evidence_grounding_v3_dev",
+  "dataset_version": "dev-synthetic-template-draft-v1",
+  "schema_version": "evidence-grounding-v2.0",
+  "dataset_file": "dev_120.jsonl",
+  "dataset_sha256": "8ef8ccd370ea223bb8358fddc54d9ba8cee44060b00dd8cb283d7fc100aedabe",
+  "case_count": 40,
+  "requirement_unit_count": 120,
+  "split": "dev",
+  "source_kind": "synthetic",
+  "source_group_count": 40,
+  "slice_counts": {
+    "cross_requirement": 4,
+    "cross_sentence": 4,
+    "explicit_action": 4,
+    "learning_reproduction": 4,
+    "multi_claim_sentence": 4,
+    "negation_plan": 4,
+    "numeric_distractor": 4,
+    "repeated_quote": 4,
+    "shared_span": 4,
+    "team_ownership": 4
+  },
+  "label_provenance": "ai_draft",
+  "label_construction": "deterministic_synthetic_template_draft",
+  "review_status": "pending_human_review",
+  "human_reviewed_units": 0,
+  "allowed_claim": "synthetic_dev_directional_diagnostic_only",
+  "forbidden_claims": [
+    "human_gold_benchmark",
+    "real_resume_generalization",
+    "production_accuracy_improvement"
+  ]
+}

@@ -1,0 +1,573 @@
+{
+  "schema_version": 1,
+  "manifest_id": "evidence_v2_dev_v2",
+  "split": "development",
+  "corpus_id": "evidence-v2-development-corpus-v2",
+  "corpus_hash": "cc49fe05ec21bbf54606ff418b0b7c9b1b65a50c8eb18827916e57a976f9cd7d",
+  "metric_version": "evidence_metrics_v1",
+  "case_inventory": [
+    {
+      "case_id": "dev-sparse_jd-01",
+      "family_id": "sparse_jd",
+      "slice_tags": [
+        "sparse_jd",
+        "no_explicit_requirement"
+      ]
+    },
+    {
+      "case_id": "dev-sparse_jd-02",
+      "family_id": "sparse_jd",
+      "slice_tags": [
+        "sparse_jd",
+        "no_explicit_requirement"
+      ]
+    },
+    {
+      "case_id": "dev-sparse_jd-03",
+      "family_id": "sparse_jd",
+      "slice_tags": [
+        "sparse_jd",
+        "no_explicit_requirement"
+      ]
+    },
+    {
+      "case_id": "dev-sparse_jd-04",
+      "family_id": "sparse_jd",
+      "slice_tags": [
+        "sparse_jd",
+        "no_explicit_requirement"
+      ]
+    },
+    {
+      "case_id": "dev-sparse_jd-05",
+      "family_id": "sparse_jd",
+      "slice_tags": [
+        "sparse_jd",
+        "no_explicit_requirement"
+      ]
+    },
+    {
+      "case_id": "dev-compound_parent-01",
+      "family_id": "compound_parent",
+      "slice_tags": [
+        "compound_parent",
+        "atomization"
+      ]
+    },
+    {
+      "case_id": "dev-compound_parent-02",
+      "family_id": "compound_parent",
+      "slice_tags": [
+        "compound_parent",
+        "atomization"
+      ]
+    },
+    {
+      "case_id": "dev-compound_parent-03",
+      "family_id": "compound_parent",
+      "slice_tags": [
+        "compound_parent",
+        "atomization"
+      ]
+    },
+    {
+      "case_id": "dev-compound_parent-04",
+      "family_id": "compound_parent",
+      "slice_tags": [
+        "compound_parent",
+        "atomization"
+      ]
+    },
+    {
+      "case_id": "dev-compound_parent-05",
+      "family_id": "compound_parent",
+      "slice_tags": [
+        "compound_parent",
+        "atomization"
+      ]
+    },
+    {
+      "case_id": "dev-importance_mix-01",
+      "family_id": "importance_mix",
+      "slice_tags": [
+        "must_should_nice",
+        "importance"
+      ]
+    },
+    {
+      "case_id": "dev-importance_mix-02",
+      "family_id": "importance_mix",
+      "slice_tags": [
+        "must_should_nice",
+        "importance"
+      ]
+    },
+    {
+      "case_id": "dev-importance_mix-03",
+      "family_id": "importance_mix",
+      "slice_tags": [
+        "must_should_nice",
+        "importance"
+      ]
+    },
+    {
+      "case_id": "dev-importance_mix-04",
+      "family_id": "importance_mix",
+      "slice_tags": [
+        "must_should_nice",
+        "importance"
+      ]
+    },
+    {
+      "case_id": "dev-importance_mix-05",
+      "family_id": "importance_mix",
+      "slice_tags": [
+        "must_should_nice",
+        "importance"
+      ]
+    },
+    {
+      "case_id": "dev-hard_gate-01",
+      "family_id": "hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "dev-hard_gate-02",
+      "family_id": "hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "dev-hard_gate-03",
+      "family_id": "hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "dev-hard_gate-04",
+      "family_id": "hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "dev-hard_gate-05",
+      "family_id": "hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "dev-partial_ownership-01",
+      "family_id": "partial_ownership",
+      "slice_tags": [
+        "partial",
+        "ownership_boundary"
+      ]
+    },
+    {
+      "case_id": "dev-partial_ownership-02",
+      "family_id": "partial_ownership",
+      "slice_tags": [
+        "partial",
+        "ownership_boundary"
+      ]
+    },
+    {
+      "case_id": "dev-partial_ownership-03",
+      "family_id": "partial_ownership",
+      "slice_tags": [
+        "partial",
+        "ownership_boundary"
+      ]
+    },
+    {
+      "case_id": "dev-partial_ownership-04",
+      "family_id": "partial_ownership",
+      "slice_tags": [
+        "partial",
+        "ownership_boundary"
+      ]
+    },
+    {
+      "case_id": "dev-partial_ownership-05",
+      "family_id": "partial_ownership",
+      "slice_tags": [
+        "partial",
+        "ownership_boundary"
+      ]
+    },
+    {
+      "case_id": "dev-contradiction-01",
+      "family_id": "contradiction",
+      "slice_tags": [
+        "contradiction",
+        "negated_ownership"
+      ]
+    },
+    {
+      "case_id": "dev-contradiction-02",
+      "family_id": "contradiction",
+      "slice_tags": [
+        "contradiction",
+        "negated_ownership"
+      ]
+    },
+    {
+      "case_id": "dev-contradiction-03",
+      "family_id": "contradiction",
+      "slice_tags": [
+        "contradiction",
+        "negated_ownership"
+      ]
+    },
+    {
+      "case_id": "dev-contradiction-04",
+      "family_id": "contradiction",
+      "slice_tags": [
+        "contradiction",
+        "negated_ownership"
+      ]
+    },
+    {
+      "case_id": "dev-contradiction-05",
+      "family_id": "contradiction",
+      "slice_tags": [
+        "contradiction",
+        "negated_ownership"
+      ]
+    },
+    {
+      "case_id": "dev-multi_link_independence-01",
+      "family_id": "multi_link_independence",
+      "slice_tags": [
+        "multi_link",
+        "independent_sources",
+        "c2_c3"
+      ]
+    },
+    {
+      "case_id": "dev-multi_link_independence-02",
+      "family_id": "multi_link_independence",
+      "slice_tags": [
+        "multi_link",
+        "independent_sources",
+        "c2_c3"
+      ]
+    },
+    {
+      "case_id": "dev-multi_link_independence-03",
+      "family_id": "multi_link_independence",
+      "slice_tags": [
+        "multi_link",
+        "independent_sources",
+        "c2_c3"
+      ]
+    },
+    {
+      "case_id": "dev-multi_link_independence-04",
+      "family_id": "multi_link_independence",
+      "slice_tags": [
+        "multi_link",
+        "independent_sources",
+        "c2_c3"
+      ]
+    },
+    {
+      "case_id": "dev-multi_link_independence-05",
+      "family_id": "multi_link_independence",
+      "slice_tags": [
+        "multi_link",
+        "independent_sources",
+        "c2_c3"
+      ]
+    },
+    {
+      "case_id": "dev-generated_injection-01",
+      "family_id": "generated_injection",
+      "slice_tags": [
+        "generated_source_rejection",
+        "prompt_injection"
+      ]
+    },
+    {
+      "case_id": "dev-generated_injection-02",
+      "family_id": "generated_injection",
+      "slice_tags": [
+        "generated_source_rejection",
+        "prompt_injection"
+      ]
+    },
+    {
+      "case_id": "dev-generated_injection-03",
+      "family_id": "generated_injection",
+      "slice_tags": [
+        "generated_source_rejection",
+        "prompt_injection"
+      ]
+    },
+    {
+      "case_id": "dev-generated_injection-04",
+      "family_id": "generated_injection",
+      "slice_tags": [
+        "generated_source_rejection",
+        "prompt_injection"
+      ]
+    },
+    {
+      "case_id": "dev-generated_injection-05",
+      "family_id": "generated_injection",
+      "slice_tags": [
+        "generated_source_rejection",
+        "prompt_injection"
+      ]
+    },
+    {
+      "case_id": "dev-unsupported_metric-01",
+      "family_id": "unsupported_metric",
+      "slice_tags": [
+        "unsupported_metric",
+        "claim_gate"
+      ]
+    },
+    {
+      "case_id": "dev-unsupported_metric-02",
+      "family_id": "unsupported_metric",
+      "slice_tags": [
+        "unsupported_metric",
+        "claim_gate"
+      ]
+    },
+    {
+      "case_id": "dev-unsupported_metric-03",
+      "family_id": "unsupported_metric",
+      "slice_tags": [
+        "unsupported_metric",
+        "claim_gate"
+      ]
+    },
+    {
+      "case_id": "dev-unsupported_metric-04",
+      "family_id": "unsupported_metric",
+      "slice_tags": [
+        "unsupported_metric",
+        "claim_gate"
+      ]
+    },
+    {
+      "case_id": "dev-unsupported_metric-05",
+      "family_id": "unsupported_metric",
+      "slice_tags": [
+        "unsupported_metric",
+        "claim_gate"
+      ]
+    },
+    {
+      "case_id": "dev-duplicate_evidence-01",
+      "family_id": "duplicate_evidence",
+      "slice_tags": [
+        "duplicate_evidence",
+        "deduplication"
+      ]
+    },
+    {
+      "case_id": "dev-duplicate_evidence-02",
+      "family_id": "duplicate_evidence",
+      "slice_tags": [
+        "duplicate_evidence",
+        "deduplication"
+      ]
+    },
+    {
+      "case_id": "dev-duplicate_evidence-03",
+      "family_id": "duplicate_evidence",
+      "slice_tags": [
+        "duplicate_evidence",
+        "deduplication"
+      ]
+    },
+    {
+      "case_id": "dev-duplicate_evidence-04",
+      "family_id": "duplicate_evidence",
+      "slice_tags": [
+        "duplicate_evidence",
+        "deduplication"
+      ]
+    },
+    {
+      "case_id": "dev-duplicate_evidence-05",
+      "family_id": "duplicate_evidence",
+      "slice_tags": [
+        "duplicate_evidence",
+        "deduplication"
+      ]
+    },
+    {
+      "case_id": "dev-paraphrase-01",
+      "family_id": "paraphrase",
+      "slice_tags": [
+        "paraphrase",
+        "semantic_stability"
+      ],
+      "paraphrase_group": "training-evaluation-deployment"
+    },
+    {
+      "case_id": "dev-paraphrase-02",
+      "family_id": "paraphrase",
+      "slice_tags": [
+        "paraphrase",
+        "semantic_stability"
+      ],
+      "paraphrase_group": "training-evaluation-deployment"
+    },
+    {
+      "case_id": "dev-paraphrase-03",
+      "family_id": "paraphrase",
+      "slice_tags": [
+        "paraphrase",
+        "semantic_stability"
+      ],
+      "paraphrase_group": "training-evaluation-deployment"
+    },
+    {
+      "case_id": "dev-paraphrase-04",
+      "family_id": "paraphrase",
+      "slice_tags": [
+        "paraphrase",
+        "semantic_stability"
+      ],
+      "paraphrase_group": "training-evaluation-deployment"
+    },
+    {
+      "case_id": "dev-paraphrase-05",
+      "family_id": "paraphrase",
+      "slice_tags": [
+        "paraphrase",
+        "semantic_stability"
+      ],
+      "paraphrase_group": "training-evaluation-deployment"
+    },
+    {
+      "case_id": "dev-bilingual_unicode-01",
+      "family_id": "bilingual_unicode",
+      "slice_tags": [
+        "bilingual",
+        "unicode_offsets",
+        "emoji"
+      ]
+    },
+    {
+      "case_id": "dev-bilingual_unicode-02",
+      "family_id": "bilingual_unicode",
+      "slice_tags": [
+        "bilingual",
+        "unicode_offsets",
+        "emoji"
+      ]
+    },
+    {
+      "case_id": "dev-bilingual_unicode-03",
+      "family_id": "bilingual_unicode",
+      "slice_tags": [
+        "bilingual",
+        "unicode_offsets",
+        "emoji"
+      ]
+    },
+    {
+      "case_id": "dev-bilingual_unicode-04",
+      "family_id": "bilingual_unicode",
+      "slice_tags": [
+        "bilingual",
+        "unicode_offsets",
+        "emoji"
+      ]
+    },
+    {
+      "case_id": "dev-bilingual_unicode-05",
+      "family_id": "bilingual_unicode",
+      "slice_tags": [
+        "bilingual",
+        "unicode_offsets",
+        "emoji"
+      ]
+    }
+  ],
+  "required_slices": [
+    "atomization",
+    "bilingual",
+    "c2_c3",
+    "claim_gate",
+    "compound_parent",
+    "contradiction",
+    "deduplication",
+    "duplicate_evidence",
+    "emoji",
+    "generated_source_rejection",
+    "hard_gate",
+    "importance",
+    "independent_sources",
+    "multi_link",
+    "must_should_nice",
+    "negated_ownership",
+    "no_explicit_requirement",
+    "ownership_boundary",
+    "paraphrase",
+    "partial",
+    "prompt_injection",
+    "semantic_stability",
+    "sparse_jd",
+    "unicode_offsets",
+    "unsupported_metric",
+    "verified_gate"
+  ],
+  "variants": [
+    {
+      "variant_id": "direct_llm_judge",
+      "corpus_id": "evidence-v2-development-corpus-v2",
+      "corpus_hash": "cc49fe05ec21bbf54606ff418b0b7c9b1b65a50c8eb18827916e57a976f9cd7d",
+      "jd_parser_version": "direct-judge-v1",
+      "evidence_prompt_version": "direct-judge-v2",
+      "fit_policy_version": "direct-judge-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "atomized_single_link",
+      "corpus_id": "evidence-v2-development-corpus-v2",
+      "corpus_hash": "cc49fe05ec21bbf54606ff418b0b7c9b1b65a50c8eb18827916e57a976f9cd7d",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "atomized-single-link-v2",
+      "fit_policy_version": "single-link-fit-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "full_evidence_v2",
+      "corpus_id": "evidence-v2-development-corpus-v2",
+      "corpus_hash": "cc49fe05ec21bbf54606ff418b0b7c9b1b65a50c8eb18827916e57a976f9cd7d",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "evidence-mapping-v2",
+      "fit_policy_version": "fit_policy_v2_initial",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    }
+  ],
+  "held_out_frozen": false,
+  "synthetic_only": true
+}

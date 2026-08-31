@@ -1,0 +1,27 @@
+{
+  "company": "ByteDance",
+  "title": "LLM Post-training Intern",
+  "role_type": "posttraining",
+  "must_have": [
+    {
+      "id": "req_sft_lora",
+      "text": "熟悉 SFT / LoRA 微调流程",
+      "required": true,
+      "probe": "追问数据格式、训练配置、loss 与 eval 的关系"
+    },
+    {
+      "id": "req_alignment",
+      "text": "了解 RLHF / DPO / GRPO / reward model 基本方法",
+      "required": true,
+      "probe": "追问偏好数据、reward/verifier 设计和算法差异"
+    },
+    {
+      "id": "req_eval",
+      "text": "具备大模型评测、消融实验和 bad case 分析经验",
+      "required": true,
+      "probe": "追问 baseline、指标定义、失败样例和局限性"
+    }
+  ],
+  "nice_to_have": [],
+  "raw_jd": "Work on SFT, RLHF, LoRA, DPO, GRPO and reward model evaluation."
+}

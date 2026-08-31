@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "invalidated_before_official_held_out",
+  "date": "2026-08-01",
+  "scope": "v5 development production canary, first 8 cases",
+  "invalidated_corpus_sha256": "13007b7d9015066a5b7cddc785ec93daedc43566ca59bf87ca5563a5ee54db35",
+  "pilot_report_sha256": "78ec68cf35df15d87daf89a74a43ae6a763a56bf1d579688156b592d540dbf6e",
+  "observed_result": {
+    "completion": "8/8 after one implementation retry",
+    "requirement_f1": 1.0,
+    "link_f1": 0.25,
+    "fit_band_accuracy": 0.75
+  },
+  "reason": "The synthetic supported evidence text was underspecified: generic 'complete coverage' language lacked concrete responsibility, comparison, metric, and runtime facts, so conservative partial labels were reasonable.",
+  "allowed_revision": "Strengthen synthetic source facts and gold-label clarity using development observations only.",
+  "held_out_observed": false,
+  "quality_claim_allowed": false
+}

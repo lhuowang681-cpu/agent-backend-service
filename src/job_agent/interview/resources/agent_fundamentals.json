@@ -1,0 +1,24 @@
+[
+  {
+    "id": "agent-loop-termination",
+    "category": "fundamentals",
+    "topics": ["agent-loop", "stopping-condition"],
+    "difficulty": "medium",
+    "suitable_roles": ["agent-engineer", "llm-application"],
+    "verification_goal": "Check whether the candidate can bound an autonomous tool loop.",
+    "question": "How would you stop an agent loop from repeating actions indefinitely?",
+    "follow_up_axes": ["budgets", "repeat detection", "verifier feedback"],
+    "reference_points": ["step and tool-call limits", "same-action fingerprint", "no-progress detection"]
+  },
+  {
+    "id": "agent-state-memory",
+    "category": "fundamentals",
+    "topics": ["agent-state", "memory"],
+    "difficulty": "medium",
+    "suitable_roles": ["agent-engineer", "llm-application"],
+    "verification_goal": "Distinguish run recovery state from cross-run memory.",
+    "question": "What belongs in a run checkpoint, and what belongs in long-term memory?",
+    "follow_up_axes": ["recovery", "retention", "stale facts"],
+    "reference_points": ["pending actions and budgets", "cross-run user facts", "different lifecycle contracts"]
+  }
+]

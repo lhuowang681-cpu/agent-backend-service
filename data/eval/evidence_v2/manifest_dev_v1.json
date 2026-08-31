@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "manifest_id": "evidence_v2_dev_v1_1",
+  "split": "development",
+  "corpus_id": "evidence-v2-development-corpus-v1.1",
+  "corpus_hash": "9ccbdc9abf38a4886d033e262574e064d5f5e5edb7c1334c7148f0d8c6717790",
+  "metric_version": "evidence_metrics_v1",
+  "case_inventory": [
+    {"case_id": "dev-sparse-jd", "slice_tags": ["sparse_jd"]},
+    {"case_id": "dev-compound-a", "slice_tags": ["compound_parent", "paraphrase"], "paraphrase_group": "compound"},
+    {"case_id": "dev-compound-b", "slice_tags": ["compound_parent", "paraphrase"], "paraphrase_group": "compound"},
+    {"case_id": "dev-nice", "slice_tags": ["nice"]},
+    {"case_id": "dev-hard-gate", "slice_tags": ["hard_gate"]},
+    {"case_id": "dev-partial", "slice_tags": ["partial"]},
+    {"case_id": "dev-contradiction", "slice_tags": ["contradiction"]},
+    {"case_id": "dev-generated-source", "slice_tags": ["generated_source_rejection"]}
+  ],
+  "required_slices": [
+    "sparse_jd",
+    "compound_parent",
+    "nice",
+    "hard_gate",
+    "partial",
+    "contradiction",
+    "paraphrase",
+    "generated_source_rejection"
+  ],
+  "variants": [
+    {
+      "variant_id": "direct_llm_judge",
+      "corpus_id": "evidence-v2-development-corpus-v1.1",
+      "corpus_hash": "9ccbdc9abf38a4886d033e262574e064d5f5e5edb7c1334c7148f0d8c6717790",
+      "jd_parser_version": "direct-judge-v1",
+      "evidence_prompt_version": "direct-judge-v1",
+      "fit_policy_version": "direct-judge-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "atomized_single_link",
+      "corpus_id": "evidence-v2-development-corpus-v1.1",
+      "corpus_hash": "9ccbdc9abf38a4886d033e262574e064d5f5e5edb7c1334c7148f0d8c6717790",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "atomized-single-link-v1",
+      "fit_policy_version": "single-link-fit-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "full_evidence_v2",
+      "corpus_id": "evidence-v2-development-corpus-v1.1",
+      "corpus_hash": "9ccbdc9abf38a4886d033e262574e064d5f5e5edb7c1334c7148f0d8c6717790",
+      "jd_parser_version": "evidence-requirements-v2",
+      "evidence_prompt_version": "evidence-mapping-v2",
+      "fit_policy_version": "fit_policy_v2_initial",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    }
+  ],
+  "held_out_frozen": false,
+  "synthetic_only": true
+}

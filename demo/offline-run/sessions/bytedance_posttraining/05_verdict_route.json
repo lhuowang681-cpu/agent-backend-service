@@ -1,0 +1,10 @@
+{
+  "verdict": "weak fit",
+  "route": "upgrade_evidence_then_apply",
+  "gate": "upgrade_required",
+  "next_actions": [
+    "revise_resume",
+    "prepare_interview"
+  ],
+  "rationale": "The role remains plausible, but missing evidence should be upgraded before application."
+}

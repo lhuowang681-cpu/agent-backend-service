@@ -1,0 +1,621 @@
+{
+  "schema_version": 1,
+  "manifest_id": "evidence_v2_hardening_dev_v5",
+  "split": "development",
+  "corpus_id": "evidence-v2-hardening-development-corpus-v5",
+  "corpus_hash": "15df2cf579e8415da89911bd83ff9d5c336bcd1a59844e062db60b1977efc6ff",
+  "metric_version": "evidence_metrics_v1",
+  "case_inventory": [
+    {
+      "case_id": "v5-dev-benefits_only_sparse-01",
+      "family_id": "benefits_only_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "benefits_noise",
+        "hardening_v5"
+      ]
+    },
+    {
+      "case_id": "v5-dev-benefits_only_sparse-02",
+      "family_id": "benefits_only_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "benefits_noise",
+        "hardening_v5"
+      ]
+    },
+    {
+      "case_id": "v5-dev-benefits_only_sparse-03",
+      "family_id": "benefits_only_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "benefits_noise",
+        "hardening_v5"
+      ]
+    },
+    {
+      "case_id": "v5-dev-benefits_only_sparse-04",
+      "family_id": "benefits_only_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "benefits_noise",
+        "hardening_v5"
+      ]
+    },
+    {
+      "case_id": "v5-dev-benefits_only_sparse-05",
+      "family_id": "benefits_only_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "benefits_noise",
+        "hardening_v5"
+      ]
+    },
+    {
+      "case_id": "v5-dev-observability_delivery_compound-01",
+      "family_id": "observability_delivery_compound",
+      "slice_tags": [
+        "compound_parent",
+        "atomization",
+        "delivery"
+      ]
+    },
+    {
+      "case_id": "v5-dev-observability_delivery_compound-02",
+      "family_id": "observability_delivery_compound",
+      "slice_tags": [
+        "compound_parent",
+        "atomization",
+        "delivery"
+      ]
+    },
+    {
+      "case_id": "v5-dev-observability_delivery_compound-03",
+      "family_id": "observability_delivery_compound",
+      "slice_tags": [
+        "compound_parent",
+        "atomization",
+        "delivery"
+      ]
+    },
+    {
+      "case_id": "v5-dev-observability_delivery_compound-04",
+      "family_id": "observability_delivery_compound",
+      "slice_tags": [
+        "compound_parent",
+        "atomization",
+        "delivery"
+      ]
+    },
+    {
+      "case_id": "v5-dev-observability_delivery_compound-05",
+      "family_id": "observability_delivery_compound",
+      "slice_tags": [
+        "compound_parent",
+        "atomization",
+        "delivery"
+      ]
+    },
+    {
+      "case_id": "v5-dev-jd_repeated_anchor-01",
+      "family_id": "jd_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "jd_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-jd_repeated_anchor-02",
+      "family_id": "jd_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "jd_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-jd_repeated_anchor-03",
+      "family_id": "jd_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "jd_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-jd_repeated_anchor-04",
+      "family_id": "jd_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "jd_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-jd_repeated_anchor-05",
+      "family_id": "jd_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "jd_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-evidence_repeated_anchor-01",
+      "family_id": "evidence_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "evidence_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-evidence_repeated_anchor-02",
+      "family_id": "evidence_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "evidence_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-evidence_repeated_anchor-03",
+      "family_id": "evidence_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "evidence_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-evidence_repeated_anchor-04",
+      "family_id": "evidence_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "evidence_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-evidence_repeated_anchor-05",
+      "family_id": "evidence_repeated_anchor",
+      "slice_tags": [
+        "repeated_quote",
+        "evidence_anchor",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-source_code_cap-01",
+      "family_id": "source_code_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "source_code",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-dev-source_code_cap-02",
+      "family_id": "source_code_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "source_code",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-dev-source_code_cap-03",
+      "family_id": "source_code_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "source_code",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-dev-source_code_cap-04",
+      "family_id": "source_code_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "source_code",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-dev-source_code_cap-05",
+      "family_id": "source_code_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "source_code",
+        "c1_only"
+      ]
+    },
+    {
+      "case_id": "v5-dev-design_record_cap-01",
+      "family_id": "design_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "design_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-dev-design_record_cap-02",
+      "family_id": "design_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "design_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-dev-design_record_cap-03",
+      "family_id": "design_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "design_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-dev-design_record_cap-04",
+      "family_id": "design_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "design_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-dev-design_record_cap-05",
+      "family_id": "design_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "design_record",
+        "c2"
+      ]
+    },
+    {
+      "case_id": "v5-dev-metric_record_cap-01",
+      "family_id": "metric_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "metric_record",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-dev-metric_record_cap-02",
+      "family_id": "metric_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "metric_record",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-dev-metric_record_cap-03",
+      "family_id": "metric_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "metric_record",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-dev-metric_record_cap-04",
+      "family_id": "metric_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "metric_record",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-dev-metric_record_cap-05",
+      "family_id": "metric_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "metric_record",
+        "c3"
+      ]
+    },
+    {
+      "case_id": "v5-dev-contradictory_metric_record-01",
+      "family_id": "contradictory_metric_record",
+      "slice_tags": [
+        "contradiction",
+        "metric_record",
+        "negative_evidence"
+      ]
+    },
+    {
+      "case_id": "v5-dev-contradictory_metric_record-02",
+      "family_id": "contradictory_metric_record",
+      "slice_tags": [
+        "contradiction",
+        "metric_record",
+        "negative_evidence"
+      ]
+    },
+    {
+      "case_id": "v5-dev-contradictory_metric_record-03",
+      "family_id": "contradictory_metric_record",
+      "slice_tags": [
+        "contradiction",
+        "metric_record",
+        "negative_evidence"
+      ]
+    },
+    {
+      "case_id": "v5-dev-contradictory_metric_record-04",
+      "family_id": "contradictory_metric_record",
+      "slice_tags": [
+        "contradiction",
+        "metric_record",
+        "negative_evidence"
+      ]
+    },
+    {
+      "case_id": "v5-dev-contradictory_metric_record-05",
+      "family_id": "contradictory_metric_record",
+      "slice_tags": [
+        "contradiction",
+        "metric_record",
+        "negative_evidence"
+      ]
+    },
+    {
+      "case_id": "v5-dev-mixed_artifact_caps-01",
+      "family_id": "mixed_artifact_caps",
+      "slice_tags": [
+        "artifact_cap",
+        "multi_source",
+        "mixed_levels"
+      ]
+    },
+    {
+      "case_id": "v5-dev-mixed_artifact_caps-02",
+      "family_id": "mixed_artifact_caps",
+      "slice_tags": [
+        "artifact_cap",
+        "multi_source",
+        "mixed_levels"
+      ]
+    },
+    {
+      "case_id": "v5-dev-mixed_artifact_caps-03",
+      "family_id": "mixed_artifact_caps",
+      "slice_tags": [
+        "artifact_cap",
+        "multi_source",
+        "mixed_levels"
+      ]
+    },
+    {
+      "case_id": "v5-dev-mixed_artifact_caps-04",
+      "family_id": "mixed_artifact_caps",
+      "slice_tags": [
+        "artifact_cap",
+        "multi_source",
+        "mixed_levels"
+      ]
+    },
+    {
+      "case_id": "v5-dev-mixed_artifact_caps-05",
+      "family_id": "mixed_artifact_caps",
+      "slice_tags": [
+        "artifact_cap",
+        "multi_source",
+        "mixed_levels"
+      ]
+    },
+    {
+      "case_id": "v5-dev-unicode_nfc_locator-01",
+      "family_id": "unicode_nfc_locator",
+      "slice_tags": [
+        "unicode",
+        "nfc",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-unicode_nfc_locator-02",
+      "family_id": "unicode_nfc_locator",
+      "slice_tags": [
+        "unicode",
+        "nfc",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-unicode_nfc_locator-03",
+      "family_id": "unicode_nfc_locator",
+      "slice_tags": [
+        "unicode",
+        "nfc",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-unicode_nfc_locator-04",
+      "family_id": "unicode_nfc_locator",
+      "slice_tags": [
+        "unicode",
+        "nfc",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-unicode_nfc_locator-05",
+      "family_id": "unicode_nfc_locator",
+      "slice_tags": [
+        "unicode",
+        "nfc",
+        "semantic_locator"
+      ]
+    },
+    {
+      "case_id": "v5-dev-punctuation_boundary-01",
+      "family_id": "punctuation_boundary",
+      "slice_tags": [
+        "exact_quote",
+        "punctuation",
+        "span_boundary"
+      ]
+    },
+    {
+      "case_id": "v5-dev-punctuation_boundary-02",
+      "family_id": "punctuation_boundary",
+      "slice_tags": [
+        "exact_quote",
+        "punctuation",
+        "span_boundary"
+      ]
+    },
+    {
+      "case_id": "v5-dev-punctuation_boundary-03",
+      "family_id": "punctuation_boundary",
+      "slice_tags": [
+        "exact_quote",
+        "punctuation",
+        "span_boundary"
+      ]
+    },
+    {
+      "case_id": "v5-dev-punctuation_boundary-04",
+      "family_id": "punctuation_boundary",
+      "slice_tags": [
+        "exact_quote",
+        "punctuation",
+        "span_boundary"
+      ]
+    },
+    {
+      "case_id": "v5-dev-punctuation_boundary-05",
+      "family_id": "punctuation_boundary",
+      "slice_tags": [
+        "exact_quote",
+        "punctuation",
+        "span_boundary"
+      ]
+    },
+    {
+      "case_id": "v5-dev-multi_atom_hard_gate-01",
+      "family_id": "multi_atom_hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "multi_atom",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "v5-dev-multi_atom_hard_gate-02",
+      "family_id": "multi_atom_hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "multi_atom",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "v5-dev-multi_atom_hard_gate-03",
+      "family_id": "multi_atom_hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "multi_atom",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "v5-dev-multi_atom_hard_gate-04",
+      "family_id": "multi_atom_hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "multi_atom",
+        "verified_gate"
+      ]
+    },
+    {
+      "case_id": "v5-dev-multi_atom_hard_gate-05",
+      "family_id": "multi_atom_hard_gate",
+      "slice_tags": [
+        "hard_gate",
+        "multi_atom",
+        "verified_gate"
+      ]
+    }
+  ],
+  "required_slices": [
+    "artifact_cap",
+    "atomization",
+    "benefits_noise",
+    "c1_only",
+    "c2",
+    "c3",
+    "compound_parent",
+    "contradiction",
+    "delivery",
+    "design_record",
+    "evidence_anchor",
+    "exact_quote",
+    "hard_gate",
+    "hardening_v5",
+    "jd_anchor",
+    "metric_record",
+    "mixed_levels",
+    "multi_atom",
+    "multi_source",
+    "negative_evidence",
+    "nfc",
+    "punctuation",
+    "repeated_quote",
+    "semantic_locator",
+    "source_code",
+    "span_boundary",
+    "sparse_jd",
+    "unicode",
+    "verified_gate"
+  ],
+  "variants": [
+    {
+      "variant_id": "direct_llm_judge",
+      "corpus_id": "evidence-v2-hardening-development-corpus-v5",
+      "corpus_hash": "15df2cf579e8415da89911bd83ff9d5c336bcd1a59844e062db60b1977efc6ff",
+      "jd_parser_version": "direct-judge-v1",
+      "evidence_prompt_version": "direct-judge-v5",
+      "fit_policy_version": "direct-judge-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "atomized_single_link",
+      "corpus_id": "evidence-v2-hardening-development-corpus-v5",
+      "corpus_hash": "15df2cf579e8415da89911bd83ff9d5c336bcd1a59844e062db60b1977efc6ff",
+      "jd_parser_version": "evidence-requirements-v2.1-quote-locator",
+      "evidence_prompt_version": "atomized-single-link-v5",
+      "fit_policy_version": "single-link-fit-v1",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    },
+    {
+      "variant_id": "full_evidence_v2",
+      "corpus_id": "evidence-v2-hardening-development-corpus-v5",
+      "corpus_hash": "15df2cf579e8415da89911bd83ff9d5c336bcd1a59844e062db60b1977efc6ff",
+      "jd_parser_version": "evidence-requirements-v2.1-quote-locator",
+      "evidence_prompt_version": "evidence-mapping-v2.2-support-level-separation",
+      "fit_policy_version": "fit_policy_v2_initial",
+      "provider": "anthropic_compatible",
+      "model": "glm-5.2",
+      "temperature": 0.0,
+      "max_case_tokens": 4096
+    }
+  ],
+  "held_out_frozen": false,
+  "synthetic_only": true
+}

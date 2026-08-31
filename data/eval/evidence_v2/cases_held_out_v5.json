@@ -1,0 +1,2280 @@
+{
+  "schema_version": 1,
+  "corpus_id": "evidence-v2-hardening-held_out-corpus-v5",
+  "cases": [
+    {
+      "case_id": "v5-held-prefix_context_collision-01",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "课程提到 Agent；岗位要求生产 Agent，并要求工具权限与失败恢复。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "prefix_context_collision_1_production_agent_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「生产 Agent」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "prefix_context_collision_1_tool_permission_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "prefix_context_collision_1_failure_recovery_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「失败恢复」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "production_agent",
+          "jd_quote": "生产 Agent",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_permission",
+          "jd_quote": "工具权限",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "production_agent-supported-c2-v1",
+          "atom_id": "production_agent",
+          "resume_quote": "本人独立设计并实现「生产 Agent」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "prefix_context_collision_1_production_agent_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "tool_permission-supported-c2-v1",
+          "atom_id": "tool_permission",
+          "resume_quote": "本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "prefix_context_collision_1_tool_permission_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_recovery-supported-c2-v1",
+          "atom_id": "failure_recovery",
+          "resume_quote": "本人独立设计并实现「失败恢复」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "prefix_context_collision_1_failure_recovery_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-02",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "课程提到 Agent；岗位要求生产 Agent，并要求工具权限与失败恢复。",
+      "resume_text": "简历原文V2：本人独立设计并实现「生产 Agent」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「工具权限」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「失败恢复」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "production_agent",
+          "jd_quote": "生产 Agent",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_permission",
+          "jd_quote": "工具权限",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "production_agent-supported-c1-v2",
+          "atom_id": "production_agent",
+          "resume_quote": "本人独立设计并实现「生产 Agent」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_permission-supported-c1-v2",
+          "atom_id": "tool_permission",
+          "resume_quote": "本人独立设计并实现「工具权限」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "failure_recovery-supported-c1-v2",
+          "atom_id": "failure_recovery",
+          "resume_quote": "本人独立设计并实现「失败恢复」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-03",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "课程提到 Agent；岗位要求生产 Agent，并要求工具权限与失败恢复。",
+      "resume_text": "简历原文V3：仅协助「生产 Agent」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "prefix_context_collision_3_tool_permission_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "production_agent",
+          "jd_quote": "生产 Agent",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_permission",
+          "jd_quote": "工具权限",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "production_agent-partial-c1-v3",
+          "atom_id": "production_agent",
+          "resume_quote": "仅协助「生产 Agent」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_permission-supported-c2-v3",
+          "atom_id": "tool_permission",
+          "resume_quote": "本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "prefix_context_collision_3_tool_permission_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-04",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "课程提到 Agent；岗位要求生产 Agent，并要求工具权限与失败恢复。",
+      "resume_text": "简历原文V4：未参与也未负责「生产 Agent」。",
+      "evidence_sources": [
+        {
+          "source_key": "prefix_context_collision_4_tool_permission_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "prefix_context_collision_4_failure_recovery_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「失败恢复」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "production_agent",
+          "jd_quote": "生产 Agent",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_permission",
+          "jd_quote": "工具权限",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "production_agent-contradictory-c1-v4",
+          "atom_id": "production_agent",
+          "resume_quote": "未参与也未负责「生产 Agent」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_permission-supported-c2-v4",
+          "atom_id": "tool_permission",
+          "resume_quote": "本人独立设计并实现「工具权限」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "prefix_context_collision_4_tool_permission_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_recovery-supported-c3-v4",
+          "atom_id": "failure_recovery",
+          "resume_quote": "「失败恢复」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "prefix_context_collision_4_failure_recovery_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-prefix_context_collision-05",
+      "family_id": "prefix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "prefix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "课程提到 Agent；岗位要求生产 Agent，并要求工具权限与失败恢复。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "prefix_context_collision_5_production_agent_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「生产 Agent」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "production_agent",
+          "jd_quote": "生产 Agent",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_permission",
+          "jd_quote": "工具权限",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_recovery",
+          "jd_quote": "失败恢复",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "production_agent-supported-c3-v5",
+          "atom_id": "production_agent",
+          "resume_quote": "「生产 Agent」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "prefix_context_collision_5_production_agent_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-01",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "要求评测离线版本，而评测线上版本需要单独的指标告警与回滚策略。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "suffix_context_collision_1_online_eval_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「线上版本评测」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "suffix_context_collision_1_metric_alert_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "suffix_context_collision_1_rollback_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「回滚策略」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "online_eval",
+          "jd_quote": "评测线上版本",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_alert",
+          "jd_quote": "指标告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rollback",
+          "jd_quote": "回滚策略",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "online_eval-supported-c2-v1",
+          "atom_id": "online_eval",
+          "resume_quote": "本人独立设计并实现「线上版本评测」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "suffix_context_collision_1_online_eval_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "metric_alert-supported-c2-v1",
+          "atom_id": "metric_alert",
+          "resume_quote": "本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "suffix_context_collision_1_metric_alert_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "rollback-supported-c2-v1",
+          "atom_id": "rollback",
+          "resume_quote": "本人独立设计并实现「回滚策略」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "suffix_context_collision_1_rollback_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-02",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "要求评测离线版本，而评测线上版本需要单独的指标告警与回滚策略。",
+      "resume_text": "简历原文V2：本人独立设计并实现「线上版本评测」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「指标告警」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「回滚策略」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "online_eval",
+          "jd_quote": "评测线上版本",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_alert",
+          "jd_quote": "指标告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rollback",
+          "jd_quote": "回滚策略",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "online_eval-supported-c1-v2",
+          "atom_id": "online_eval",
+          "resume_quote": "本人独立设计并实现「线上版本评测」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_alert-supported-c1-v2",
+          "atom_id": "metric_alert",
+          "resume_quote": "本人独立设计并实现「指标告警」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "rollback-supported-c1-v2",
+          "atom_id": "rollback",
+          "resume_quote": "本人独立设计并实现「回滚策略」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-03",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "要求评测离线版本，而评测线上版本需要单独的指标告警与回滚策略。",
+      "resume_text": "简历原文V3：仅协助「线上版本评测」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "suffix_context_collision_3_metric_alert_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "online_eval",
+          "jd_quote": "评测线上版本",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_alert",
+          "jd_quote": "指标告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rollback",
+          "jd_quote": "回滚策略",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "online_eval-partial-c1-v3",
+          "atom_id": "online_eval",
+          "resume_quote": "仅协助「线上版本评测」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_alert-supported-c2-v3",
+          "atom_id": "metric_alert",
+          "resume_quote": "本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "suffix_context_collision_3_metric_alert_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-04",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "要求评测离线版本，而评测线上版本需要单独的指标告警与回滚策略。",
+      "resume_text": "简历原文V4：未参与也未负责「线上版本评测」。",
+      "evidence_sources": [
+        {
+          "source_key": "suffix_context_collision_4_metric_alert_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "suffix_context_collision_4_rollback_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「回滚策略」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "online_eval",
+          "jd_quote": "评测线上版本",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_alert",
+          "jd_quote": "指标告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rollback",
+          "jd_quote": "回滚策略",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "online_eval-contradictory-c1-v4",
+          "atom_id": "online_eval",
+          "resume_quote": "未参与也未负责「线上版本评测」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "metric_alert-supported-c2-v4",
+          "atom_id": "metric_alert",
+          "resume_quote": "本人独立设计并实现「指标告警」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "suffix_context_collision_4_metric_alert_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "rollback-supported-c3-v4",
+          "atom_id": "rollback",
+          "resume_quote": "「回滚策略」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "suffix_context_collision_4_rollback_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-suffix_context_collision-05",
+      "family_id": "suffix_context_collision",
+      "slice_tags": [
+        "repeated_quote",
+        "suffix_anchor",
+        "heldout_v5"
+      ],
+      "jd_text": "要求评测离线版本，而评测线上版本需要单独的指标告警与回滚策略。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "suffix_context_collision_5_online_eval_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「线上版本评测」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "online_eval",
+          "jd_quote": "评测线上版本",
+          "importance": "must"
+        },
+        {
+          "atom_id": "metric_alert",
+          "jd_quote": "指标告警",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rollback",
+          "jd_quote": "回滚策略",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "online_eval-supported-c3-v5",
+          "atom_id": "online_eval",
+          "resume_quote": "「线上版本评测」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "suffix_context_collision_5_online_eval_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-01",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ],
+      "jd_text": "需要定位级联故障、执行止损并推动事故复盘闭环。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "incident_report_cap_1_cascade_failure_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「级联故障定位」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "incident_report_cap_1_mitigation_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "incident_report_cap_1_incident_closure_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「事故复盘闭环」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "cascade_failure",
+          "jd_quote": "定位级联故障",
+          "importance": "must"
+        },
+        {
+          "atom_id": "mitigation",
+          "jd_quote": "执行止损",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident_closure",
+          "jd_quote": "事故复盘闭环",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "cascade_failure-supported-c2-v1",
+          "atom_id": "cascade_failure",
+          "resume_quote": "本人独立设计并实现「级联故障定位」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "incident_report_cap_1_cascade_failure_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "mitigation-supported-c2-v1",
+          "atom_id": "mitigation",
+          "resume_quote": "本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "incident_report_cap_1_mitigation_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "incident_closure-supported-c2-v1",
+          "atom_id": "incident_closure",
+          "resume_quote": "本人独立设计并实现「事故复盘闭环」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "incident_report_cap_1_incident_closure_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-02",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ],
+      "jd_text": "需要定位级联故障、执行止损并推动事故复盘闭环。",
+      "resume_text": "简历原文V2：本人独立设计并实现「级联故障定位」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「故障止损」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「事故复盘闭环」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "cascade_failure",
+          "jd_quote": "定位级联故障",
+          "importance": "must"
+        },
+        {
+          "atom_id": "mitigation",
+          "jd_quote": "执行止损",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident_closure",
+          "jd_quote": "事故复盘闭环",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "cascade_failure-supported-c1-v2",
+          "atom_id": "cascade_failure",
+          "resume_quote": "本人独立设计并实现「级联故障定位」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "mitigation-supported-c1-v2",
+          "atom_id": "mitigation",
+          "resume_quote": "本人独立设计并实现「故障止损」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "incident_closure-supported-c1-v2",
+          "atom_id": "incident_closure",
+          "resume_quote": "本人独立设计并实现「事故复盘闭环」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-03",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ],
+      "jd_text": "需要定位级联故障、执行止损并推动事故复盘闭环。",
+      "resume_text": "简历原文V3：仅协助「级联故障定位」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "incident_report_cap_3_mitigation_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "cascade_failure",
+          "jd_quote": "定位级联故障",
+          "importance": "must"
+        },
+        {
+          "atom_id": "mitigation",
+          "jd_quote": "执行止损",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident_closure",
+          "jd_quote": "事故复盘闭环",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "cascade_failure-partial-c1-v3",
+          "atom_id": "cascade_failure",
+          "resume_quote": "仅协助「级联故障定位」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "mitigation-supported-c2-v3",
+          "atom_id": "mitigation",
+          "resume_quote": "本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "incident_report_cap_3_mitigation_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-04",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ],
+      "jd_text": "需要定位级联故障、执行止损并推动事故复盘闭环。",
+      "resume_text": "简历原文V4：未参与也未负责「级联故障定位」。",
+      "evidence_sources": [
+        {
+          "source_key": "incident_report_cap_4_mitigation_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "incident_report_cap_4_incident_closure_c3",
+          "kind": "user_artifact",
+          "display_label": "incident_report source",
+          "text": "运行审计V4：「事故复盘闭环」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "incident_report"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "cascade_failure",
+          "jd_quote": "定位级联故障",
+          "importance": "must"
+        },
+        {
+          "atom_id": "mitigation",
+          "jd_quote": "执行止损",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident_closure",
+          "jd_quote": "事故复盘闭环",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "cascade_failure-contradictory-c1-v4",
+          "atom_id": "cascade_failure",
+          "resume_quote": "未参与也未负责「级联故障定位」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "mitigation-supported-c2-v4",
+          "atom_id": "mitigation",
+          "resume_quote": "本人独立设计并实现「故障止损」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "incident_report_cap_4_mitigation_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "incident_closure-supported-c3-v4",
+          "atom_id": "incident_closure",
+          "resume_quote": "「事故复盘闭环」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "incident_report_cap_4_incident_closure_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-incident_report_cap-05",
+      "family_id": "incident_report_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "incident_report",
+        "c3"
+      ],
+      "jd_text": "需要定位级联故障、执行止损并推动事故复盘闭环。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "incident_report_cap_5_cascade_failure_c3",
+          "kind": "user_artifact",
+          "display_label": "incident_report source",
+          "text": "运行审计V5：「级联故障定位」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "incident_report"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "cascade_failure",
+          "jd_quote": "定位级联故障",
+          "importance": "must"
+        },
+        {
+          "atom_id": "mitigation",
+          "jd_quote": "执行止损",
+          "importance": "must"
+        },
+        {
+          "atom_id": "incident_closure",
+          "jd_quote": "事故复盘闭环",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "cascade_failure-supported-c3-v5",
+          "atom_id": "cascade_failure",
+          "resume_quote": "「级联故障定位」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "incident_report_cap_5_cascade_failure_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-readme_cap-01",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ],
+      "jd_text": "要求交付 SDK、维护兼容矩阵并提供最小示例。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "readme_cap_1_sdk_delivery_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「SDK 交付」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "readme_cap_1_compatibility_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "readme_cap_1_minimal_example_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「最小示例」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "sdk_delivery",
+          "jd_quote": "交付 SDK",
+          "importance": "must"
+        },
+        {
+          "atom_id": "compatibility",
+          "jd_quote": "兼容矩阵",
+          "importance": "must"
+        },
+        {
+          "atom_id": "minimal_example",
+          "jd_quote": "最小示例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "sdk_delivery-supported-c2-v1",
+          "atom_id": "sdk_delivery",
+          "resume_quote": "本人独立设计并实现「SDK 交付」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "readme_cap_1_sdk_delivery_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "compatibility-supported-c2-v1",
+          "atom_id": "compatibility",
+          "resume_quote": "本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "readme_cap_1_compatibility_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "minimal_example-supported-c2-v1",
+          "atom_id": "minimal_example",
+          "resume_quote": "本人独立设计并实现「最小示例」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "readme_cap_1_minimal_example_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-readme_cap-02",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ],
+      "jd_text": "要求交付 SDK、维护兼容矩阵并提供最小示例。",
+      "resume_text": "候选材料 V2 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "readme_cap_2_sdk_delivery_c1",
+          "kind": "project_source",
+          "display_label": "readme source",
+          "text": "原始材料V2：本人独立设计并实现「SDK 交付」，测试与验收清单逐项通过并完成交付。材料由用户显式选择并保留上下文。",
+          "artifact_type": "readme"
+        },
+        {
+          "source_key": "readme_cap_2_compatibility_c1",
+          "kind": "project_source",
+          "display_label": "readme source",
+          "text": "原始材料V2：本人独立设计并实现「兼容矩阵」，测试与验收清单逐项通过并完成交付。材料由用户显式选择并保留上下文。",
+          "artifact_type": "readme"
+        },
+        {
+          "source_key": "readme_cap_2_minimal_example_c1",
+          "kind": "project_source",
+          "display_label": "readme source",
+          "text": "原始材料V2：本人独立设计并实现「最小示例」，测试与验收清单逐项通过并完成交付。材料由用户显式选择并保留上下文。",
+          "artifact_type": "readme"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "sdk_delivery",
+          "jd_quote": "交付 SDK",
+          "importance": "must"
+        },
+        {
+          "atom_id": "compatibility",
+          "jd_quote": "兼容矩阵",
+          "importance": "must"
+        },
+        {
+          "atom_id": "minimal_example",
+          "jd_quote": "最小示例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "sdk_delivery-supported-c1-v2",
+          "atom_id": "sdk_delivery",
+          "resume_quote": "本人独立设计并实现「SDK 交付」，测试与验收清单逐项通过并完成交付",
+          "source_key": "readme_cap_2_sdk_delivery_c1",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "compatibility-supported-c1-v2",
+          "atom_id": "compatibility",
+          "resume_quote": "本人独立设计并实现「兼容矩阵」，测试与验收清单逐项通过并完成交付",
+          "source_key": "readme_cap_2_compatibility_c1",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "minimal_example-supported-c1-v2",
+          "atom_id": "minimal_example",
+          "resume_quote": "本人独立设计并实现「最小示例」，测试与验收清单逐项通过并完成交付",
+          "source_key": "readme_cap_2_minimal_example_c1",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-readme_cap-03",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ],
+      "jd_text": "要求交付 SDK、维护兼容矩阵并提供最小示例。",
+      "resume_text": "候选材料 V3 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "readme_cap_3_sdk_delivery_c1",
+          "kind": "project_source",
+          "display_label": "readme source",
+          "text": "原始材料V3：仅协助「SDK 交付」的局部执行，未负责方案与验收。材料由用户显式选择并保留上下文。",
+          "artifact_type": "readme"
+        },
+        {
+          "source_key": "readme_cap_3_compatibility_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "sdk_delivery",
+          "jd_quote": "交付 SDK",
+          "importance": "must"
+        },
+        {
+          "atom_id": "compatibility",
+          "jd_quote": "兼容矩阵",
+          "importance": "must"
+        },
+        {
+          "atom_id": "minimal_example",
+          "jd_quote": "最小示例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "sdk_delivery-partial-c1-v3",
+          "atom_id": "sdk_delivery",
+          "resume_quote": "仅协助「SDK 交付」的局部执行，未负责方案与验收",
+          "source_key": "readme_cap_3_sdk_delivery_c1",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "compatibility-supported-c2-v3",
+          "atom_id": "compatibility",
+          "resume_quote": "本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "readme_cap_3_compatibility_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-readme_cap-04",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ],
+      "jd_text": "要求交付 SDK、维护兼容矩阵并提供最小示例。",
+      "resume_text": "候选材料 V4 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "readme_cap_4_sdk_delivery_c1",
+          "kind": "project_source",
+          "display_label": "readme source",
+          "text": "原始材料V4：未参与也未负责「SDK 交付」。材料由用户显式选择并保留上下文。",
+          "artifact_type": "readme"
+        },
+        {
+          "source_key": "readme_cap_4_compatibility_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "readme_cap_4_minimal_example_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「最小示例」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "sdk_delivery",
+          "jd_quote": "交付 SDK",
+          "importance": "must"
+        },
+        {
+          "atom_id": "compatibility",
+          "jd_quote": "兼容矩阵",
+          "importance": "must"
+        },
+        {
+          "atom_id": "minimal_example",
+          "jd_quote": "最小示例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "sdk_delivery-contradictory-c1-v4",
+          "atom_id": "sdk_delivery",
+          "resume_quote": "未参与也未负责「SDK 交付」",
+          "source_key": "readme_cap_4_sdk_delivery_c1",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "compatibility-supported-c2-v4",
+          "atom_id": "compatibility",
+          "resume_quote": "本人独立设计并实现「兼容矩阵」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "readme_cap_4_compatibility_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "minimal_example-supported-c3-v4",
+          "atom_id": "minimal_example",
+          "resume_quote": "「最小示例」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "readme_cap_4_minimal_example_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-readme_cap-05",
+      "family_id": "readme_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "readme",
+        "c1_only"
+      ],
+      "jd_text": "要求交付 SDK、维护兼容矩阵并提供最小示例。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "readme_cap_5_sdk_delivery_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「SDK 交付」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "sdk_delivery",
+          "jd_quote": "交付 SDK",
+          "importance": "must"
+        },
+        {
+          "atom_id": "compatibility",
+          "jd_quote": "兼容矩阵",
+          "importance": "must"
+        },
+        {
+          "atom_id": "minimal_example",
+          "jd_quote": "最小示例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "sdk_delivery-supported-c3-v5",
+          "atom_id": "sdk_delivery",
+          "resume_quote": "「SDK 交付」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "readme_cap_5_sdk_delivery_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-01",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ],
+      "jd_text": "要求比较召回方案、验证重排收益并记录失败案例。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "comparison_record_cap_1_retrieval_compare_c2",
+          "kind": "user_artifact",
+          "display_label": "comparison_record source",
+          "text": "实验记录V1：本人独立设计并实现「召回方案比较」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "comparison_record"
+        },
+        {
+          "source_key": "comparison_record_cap_1_rerank_gain_c2",
+          "kind": "user_artifact",
+          "display_label": "comparison_record source",
+          "text": "实验记录V1：本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "comparison_record"
+        },
+        {
+          "source_key": "comparison_record_cap_1_failure_cases_c2",
+          "kind": "user_artifact",
+          "display_label": "comparison_record source",
+          "text": "实验记录V1：本人独立设计并实现「失败案例」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "comparison_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "retrieval_compare",
+          "jd_quote": "比较召回方案",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rerank_gain",
+          "jd_quote": "验证重排收益",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_cases",
+          "jd_quote": "失败案例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "retrieval_compare-supported-c2-v1",
+          "atom_id": "retrieval_compare",
+          "resume_quote": "本人独立设计并实现「召回方案比较」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "comparison_record_cap_1_retrieval_compare_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "rerank_gain-supported-c2-v1",
+          "atom_id": "rerank_gain",
+          "resume_quote": "本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "comparison_record_cap_1_rerank_gain_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_cases-supported-c2-v1",
+          "atom_id": "failure_cases",
+          "resume_quote": "本人独立设计并实现「失败案例」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "comparison_record_cap_1_failure_cases_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-02",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ],
+      "jd_text": "要求比较召回方案、验证重排收益并记录失败案例。",
+      "resume_text": "简历原文V2：本人独立设计并实现「召回方案比较」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「重排收益」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「失败案例」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "retrieval_compare",
+          "jd_quote": "比较召回方案",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rerank_gain",
+          "jd_quote": "验证重排收益",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_cases",
+          "jd_quote": "失败案例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "retrieval_compare-supported-c1-v2",
+          "atom_id": "retrieval_compare",
+          "resume_quote": "本人独立设计并实现「召回方案比较」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "rerank_gain-supported-c1-v2",
+          "atom_id": "rerank_gain",
+          "resume_quote": "本人独立设计并实现「重排收益」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "failure_cases-supported-c1-v2",
+          "atom_id": "failure_cases",
+          "resume_quote": "本人独立设计并实现「失败案例」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-03",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ],
+      "jd_text": "要求比较召回方案、验证重排收益并记录失败案例。",
+      "resume_text": "简历原文V3：仅协助「召回方案比较」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "comparison_record_cap_3_rerank_gain_c2",
+          "kind": "user_artifact",
+          "display_label": "comparison_record source",
+          "text": "实验记录V3：本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "comparison_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "retrieval_compare",
+          "jd_quote": "比较召回方案",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rerank_gain",
+          "jd_quote": "验证重排收益",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_cases",
+          "jd_quote": "失败案例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "retrieval_compare-partial-c1-v3",
+          "atom_id": "retrieval_compare",
+          "resume_quote": "仅协助「召回方案比较」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "rerank_gain-supported-c2-v3",
+          "atom_id": "rerank_gain",
+          "resume_quote": "本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "comparison_record_cap_3_rerank_gain_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-04",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ],
+      "jd_text": "要求比较召回方案、验证重排收益并记录失败案例。",
+      "resume_text": "简历原文V4：未参与也未负责「召回方案比较」。",
+      "evidence_sources": [
+        {
+          "source_key": "comparison_record_cap_4_rerank_gain_c2",
+          "kind": "user_artifact",
+          "display_label": "comparison_record source",
+          "text": "实验记录V4：本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "comparison_record"
+        },
+        {
+          "source_key": "comparison_record_cap_4_failure_cases_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「失败案例」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "retrieval_compare",
+          "jd_quote": "比较召回方案",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rerank_gain",
+          "jd_quote": "验证重排收益",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_cases",
+          "jd_quote": "失败案例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "retrieval_compare-contradictory-c1-v4",
+          "atom_id": "retrieval_compare",
+          "resume_quote": "未参与也未负责「召回方案比较」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "rerank_gain-supported-c2-v4",
+          "atom_id": "rerank_gain",
+          "resume_quote": "本人独立设计并实现「重排收益」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "comparison_record_cap_4_rerank_gain_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "failure_cases-supported-c3-v4",
+          "atom_id": "failure_cases",
+          "resume_quote": "「失败案例」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "comparison_record_cap_4_failure_cases_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-comparison_record_cap-05",
+      "family_id": "comparison_record_cap",
+      "slice_tags": [
+        "artifact_cap",
+        "comparison_record",
+        "c2"
+      ],
+      "jd_text": "要求比较召回方案、验证重排收益并记录失败案例。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "comparison_record_cap_5_retrieval_compare_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「召回方案比较」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "retrieval_compare",
+          "jd_quote": "比较召回方案",
+          "importance": "must"
+        },
+        {
+          "atom_id": "rerank_gain",
+          "jd_quote": "验证重排收益",
+          "importance": "must"
+        },
+        {
+          "atom_id": "failure_cases",
+          "jd_quote": "失败案例",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "retrieval_compare-supported-c3-v5",
+          "atom_id": "retrieval_compare",
+          "resume_quote": "「召回方案比较」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "comparison_record_cap_5_retrieval_compare_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-01",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ],
+      "jd_text": "需要建立质量抽检、维护一致性指标并处理标注争议。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "near_duplicate_claims_1_quality_sampling_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「质量抽检」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文；术语索引：质量抽检 / 质量抽检。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "near_duplicate_claims_1_agreement_metric_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文；术语索引：一致性指标 / 一致性指标。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "near_duplicate_claims_1_label_dispute_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「标注争议」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文；术语索引：标注争议 / 标注争议。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "quality_sampling",
+          "jd_quote": "建立质量抽检",
+          "importance": "must"
+        },
+        {
+          "atom_id": "agreement_metric",
+          "jd_quote": "一致性指标",
+          "importance": "must"
+        },
+        {
+          "atom_id": "label_dispute",
+          "jd_quote": "处理标注争议",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "quality_sampling-supported-c2-v1",
+          "atom_id": "quality_sampling",
+          "resume_quote": "本人独立设计并实现「质量抽检」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "near_duplicate_claims_1_quality_sampling_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "agreement_metric-supported-c2-v1",
+          "atom_id": "agreement_metric",
+          "resume_quote": "本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "near_duplicate_claims_1_agreement_metric_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "label_dispute-supported-c2-v1",
+          "atom_id": "label_dispute",
+          "resume_quote": "本人独立设计并实现「标注争议」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "near_duplicate_claims_1_label_dispute_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-02",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ],
+      "jd_text": "需要建立质量抽检、维护一致性指标并处理标注争议。",
+      "resume_text": "简历原文V2：本人独立设计并实现「质量抽检」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「一致性指标」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「标注争议」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "quality_sampling",
+          "jd_quote": "建立质量抽检",
+          "importance": "must"
+        },
+        {
+          "atom_id": "agreement_metric",
+          "jd_quote": "一致性指标",
+          "importance": "must"
+        },
+        {
+          "atom_id": "label_dispute",
+          "jd_quote": "处理标注争议",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "quality_sampling-supported-c1-v2",
+          "atom_id": "quality_sampling",
+          "resume_quote": "本人独立设计并实现「质量抽检」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "agreement_metric-supported-c1-v2",
+          "atom_id": "agreement_metric",
+          "resume_quote": "本人独立设计并实现「一致性指标」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "label_dispute-supported-c1-v2",
+          "atom_id": "label_dispute",
+          "resume_quote": "本人独立设计并实现「标注争议」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-03",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ],
+      "jd_text": "需要建立质量抽检、维护一致性指标并处理标注争议。",
+      "resume_text": "简历原文V3：仅协助「质量抽检」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "near_duplicate_claims_3_agreement_metric_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文；术语索引：一致性指标 / 一致性指标。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "quality_sampling",
+          "jd_quote": "建立质量抽检",
+          "importance": "must"
+        },
+        {
+          "atom_id": "agreement_metric",
+          "jd_quote": "一致性指标",
+          "importance": "must"
+        },
+        {
+          "atom_id": "label_dispute",
+          "jd_quote": "处理标注争议",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "quality_sampling-partial-c1-v3",
+          "atom_id": "quality_sampling",
+          "resume_quote": "仅协助「质量抽检」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "agreement_metric-supported-c2-v3",
+          "atom_id": "agreement_metric",
+          "resume_quote": "本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "near_duplicate_claims_3_agreement_metric_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-04",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ],
+      "jd_text": "需要建立质量抽检、维护一致性指标并处理标注争议。",
+      "resume_text": "简历原文V4：未参与也未负责「质量抽检」。",
+      "evidence_sources": [
+        {
+          "source_key": "near_duplicate_claims_4_agreement_metric_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文；术语索引：一致性指标 / 一致性指标。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "near_duplicate_claims_4_label_dispute_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「标注争议」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文；术语索引：标注争议 / 标注争议。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "quality_sampling",
+          "jd_quote": "建立质量抽检",
+          "importance": "must"
+        },
+        {
+          "atom_id": "agreement_metric",
+          "jd_quote": "一致性指标",
+          "importance": "must"
+        },
+        {
+          "atom_id": "label_dispute",
+          "jd_quote": "处理标注争议",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "quality_sampling-contradictory-c1-v4",
+          "atom_id": "quality_sampling",
+          "resume_quote": "未参与也未负责「质量抽检」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "agreement_metric-supported-c2-v4",
+          "atom_id": "agreement_metric",
+          "resume_quote": "本人独立设计并实现「一致性指标」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "near_duplicate_claims_4_agreement_metric_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "label_dispute-supported-c3-v4",
+          "atom_id": "label_dispute",
+          "resume_quote": "「标注争议」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "near_duplicate_claims_4_label_dispute_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-near_duplicate_claims-05",
+      "family_id": "near_duplicate_claims",
+      "slice_tags": [
+        "near_duplicate",
+        "deduplication",
+        "multi_link"
+      ],
+      "jd_text": "需要建立质量抽检、维护一致性指标并处理标注争议。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "near_duplicate_claims_5_quality_sampling_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「质量抽检」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文；术语索引：质量抽检 / 质量抽检。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "quality_sampling",
+          "jd_quote": "建立质量抽检",
+          "importance": "must"
+        },
+        {
+          "atom_id": "agreement_metric",
+          "jd_quote": "一致性指标",
+          "importance": "must"
+        },
+        {
+          "atom_id": "label_dispute",
+          "jd_quote": "处理标注争议",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "quality_sampling-supported-c3-v5",
+          "atom_id": "quality_sampling",
+          "resume_quote": "「质量抽检」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "near_duplicate_claims_5_quality_sampling_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-01",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ],
+      "jd_text": "岗位名称：大模型算法工程师。团队正在招聘，具体职责面谈。",
+      "resume_text": "候选材料 V1 仅包含课程兴趣与团队活动。",
+      "evidence_sources": [],
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-02",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ],
+      "jd_text": "岗位名称：大模型算法工程师。团队正在招聘，具体职责面谈。",
+      "resume_text": "候选材料 V2 仅包含课程兴趣与团队活动。",
+      "evidence_sources": [],
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-03",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ],
+      "jd_text": "岗位名称：大模型算法工程师。团队正在招聘，具体职责面谈。",
+      "resume_text": "候选材料 V3 仅包含课程兴趣与团队活动。",
+      "evidence_sources": [],
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-04",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ],
+      "jd_text": "岗位名称：大模型算法工程师。团队正在招聘，具体职责面谈。",
+      "resume_text": "候选材料 V4 仅包含课程兴趣与团队活动。",
+      "evidence_sources": [],
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "v5-held-title_noise_sparse-05",
+      "family_id": "title_noise_sparse",
+      "slice_tags": [
+        "sparse_jd",
+        "role_title_noise",
+        "heldout_v5"
+      ],
+      "jd_text": "岗位名称：大模型算法工程师。团队正在招聘，具体职责面谈。",
+      "resume_text": "候选材料 V5 仅包含课程兴趣与团队活动。",
+      "evidence_sources": [],
+      "gold_atoms": [],
+      "gold_links": [],
+      "expected_fit_band": "insufficient_information"
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-01",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ],
+      "jd_text": "Must own eval harness；负责 tool routing / retries；需要 production tracing。",
+      "resume_text": "候选材料 V1 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "mixed_language_delimiters_1_eval_harness_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「eval harness」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "mixed_language_delimiters_1_tool_retry_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "mixed_language_delimiters_1_prod_tracing_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V1：本人独立设计并实现「production tracing」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_harness",
+          "jd_quote": "own eval harness",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_retry",
+          "jd_quote": "tool routing / retries",
+          "importance": "must"
+        },
+        {
+          "atom_id": "prod_tracing",
+          "jd_quote": "production tracing",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_harness-supported-c2-v1",
+          "atom_id": "eval_harness",
+          "resume_quote": "本人独立设计并实现「eval harness」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "mixed_language_delimiters_1_eval_harness_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "tool_retry-supported-c2-v1",
+          "atom_id": "tool_retry",
+          "resume_quote": "本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "mixed_language_delimiters_1_tool_retry_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "prod_tracing-supported-c2-v1",
+          "atom_id": "prod_tracing",
+          "resume_quote": "本人独立设计并实现「production tracing」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "mixed_language_delimiters_1_prod_tracing_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-02",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ],
+      "jd_text": "Must own eval harness；负责 tool routing / retries；需要 production tracing。",
+      "resume_text": "简历原文V2：本人独立设计并实现「eval harness」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「tool routing retries」，测试与验收清单逐项通过并完成交付；简历原文V2：本人独立设计并实现「production tracing」，测试与验收清单逐项通过并完成交付。",
+      "evidence_sources": [],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_harness",
+          "jd_quote": "own eval harness",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_retry",
+          "jd_quote": "tool routing / retries",
+          "importance": "must"
+        },
+        {
+          "atom_id": "prod_tracing",
+          "jd_quote": "production tracing",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_harness-supported-c1-v2",
+          "atom_id": "eval_harness",
+          "resume_quote": "本人独立设计并实现「eval harness」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_retry-supported-c1-v2",
+          "atom_id": "tool_retry",
+          "resume_quote": "本人独立设计并实现「tool routing retries」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        },
+        {
+          "link_id": "prod_tracing-supported-c1-v2",
+          "atom_id": "prod_tracing",
+          "resume_quote": "本人独立设计并实现「production tracing」，测试与验收清单逐项通过并完成交付",
+          "source_key": "resume",
+          "support_status": "supported",
+          "level": "C1"
+        }
+      ],
+      "expected_fit_band": "high"
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-03",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ],
+      "jd_text": "Must own eval harness；负责 tool routing / retries；需要 production tracing。",
+      "resume_text": "简历原文V3：仅协助「eval harness」的局部执行，未负责方案与验收。",
+      "evidence_sources": [
+        {
+          "source_key": "mixed_language_delimiters_3_tool_retry_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V3：本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_harness",
+          "jd_quote": "own eval harness",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_retry",
+          "jd_quote": "tool routing / retries",
+          "importance": "must"
+        },
+        {
+          "atom_id": "prod_tracing",
+          "jd_quote": "production tracing",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_harness-partial-c1-v3",
+          "atom_id": "eval_harness",
+          "resume_quote": "仅协助「eval harness」的局部执行，未负责方案与验收",
+          "source_key": "resume",
+          "support_status": "partial",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_retry-supported-c2-v3",
+          "atom_id": "tool_retry",
+          "resume_quote": "本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "mixed_language_delimiters_3_tool_retry_c2",
+          "support_status": "supported",
+          "level": "C2"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-04",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ],
+      "jd_text": "Must own eval harness；负责 tool routing / retries；需要 production tracing。",
+      "resume_text": "简历原文V4：未参与也未负责「eval harness」。",
+      "evidence_sources": [
+        {
+          "source_key": "mixed_language_delimiters_4_tool_retry_c2",
+          "kind": "user_artifact",
+          "display_label": "experiment_record source",
+          "text": "实验记录V4：本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令。材料由用户显式选择并保留上下文。",
+          "artifact_type": "experiment_record"
+        },
+        {
+          "source_key": "mixed_language_delimiters_4_prod_tracing_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V4：「production tracing」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_harness",
+          "jd_quote": "own eval harness",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_retry",
+          "jd_quote": "tool routing / retries",
+          "importance": "must"
+        },
+        {
+          "atom_id": "prod_tracing",
+          "jd_quote": "production tracing",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_harness-contradictory-c1-v4",
+          "atom_id": "eval_harness",
+          "resume_quote": "未参与也未负责「eval harness」",
+          "source_key": "resume",
+          "support_status": "contradictory",
+          "level": "C1"
+        },
+        {
+          "link_id": "tool_retry-supported-c2-v4",
+          "atom_id": "tool_retry",
+          "resume_quote": "本人独立设计并实现「tool routing retries」，验收清单逐项通过；记录含 baseline、对照组、量化结果、失败样本与复现命令",
+          "source_key": "mixed_language_delimiters_4_tool_retry_c2",
+          "support_status": "supported",
+          "level": "C2"
+        },
+        {
+          "link_id": "prod_tracing-supported-c3-v4",
+          "atom_id": "prod_tracing",
+          "resume_quote": "「production tracing」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "mixed_language_delimiters_4_prod_tracing_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "medium"
+    },
+    {
+      "case_id": "v5-held-mixed_language_delimiters-05",
+      "family_id": "mixed_language_delimiters",
+      "slice_tags": [
+        "bilingual",
+        "delimiter",
+        "unicode"
+      ],
+      "jd_text": "Must own eval harness；负责 tool routing / retries；需要 production tracing。",
+      "resume_text": "候选材料 V5 未额外声明岗位相关事实。",
+      "evidence_sources": [
+        {
+          "source_key": "mixed_language_delimiters_5_eval_harness_c3",
+          "kind": "user_artifact",
+          "display_label": "production_log source",
+          "text": "运行审计V5：「eval harness」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人。材料由用户显式选择并保留上下文。",
+          "artifact_type": "production_log"
+        }
+      ],
+      "gold_atoms": [
+        {
+          "atom_id": "eval_harness",
+          "jd_quote": "own eval harness",
+          "importance": "must"
+        },
+        {
+          "atom_id": "tool_retry",
+          "jd_quote": "tool routing / retries",
+          "importance": "must"
+        },
+        {
+          "atom_id": "prod_tracing",
+          "jd_quote": "production tracing",
+          "importance": "must"
+        }
+      ],
+      "gold_links": [
+        {
+          "link_id": "eval_harness-supported-c3-v5",
+          "atom_id": "eval_harness",
+          "resume_quote": "「eval harness」已灰度运行 14 天，审计包含 p50/p95、错误率、告警、回滚演练和责任人",
+          "source_key": "mixed_language_delimiters_5_eval_harness_c3",
+          "support_status": "supported",
+          "level": "C3"
+        }
+      ],
+      "expected_fit_band": "low"
+    }
+  ]
+}

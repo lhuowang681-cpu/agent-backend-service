@@ -1,0 +1,12 @@
+**
+!pyproject.toml
+!README.md
+!requirements.backend.txt
+!src/
+!src/**
+!fit_verdict_engine/
+!fit_verdict_engine/**
+
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/

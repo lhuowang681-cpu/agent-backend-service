@@ -1,0 +1,2 @@
+# Runtime, UI, and public test dependencies are declared in pyproject.toml.
+-e .[ui,dev]

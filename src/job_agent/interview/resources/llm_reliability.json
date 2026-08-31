@@ -1,0 +1,24 @@
+[
+  {
+    "id": "llm-structured-output",
+    "category": "fundamentals",
+    "topics": ["structured-output", "schema"],
+    "difficulty": "easy",
+    "suitable_roles": ["llm-application", "agent-engineer"],
+    "verification_goal": "Check whether the candidate treats model output as untrusted input.",
+    "question": "Why is schema validation still necessary when a provider supports structured output?",
+    "follow_up_axes": ["truncation", "semantic guards", "repair limits"],
+    "reference_points": ["provider contract can fail", "shape is not semantic correctness", "bounded repair"]
+  },
+  {
+    "id": "llm-evaluation-grounding",
+    "category": "fundamentals",
+    "topics": ["evaluation", "grounding"],
+    "difficulty": "hard",
+    "suitable_roles": ["llm-application", "agent-engineer"],
+    "verification_goal": "Check whether an evaluator distinguishes trajectory evidence from fluent claims.",
+    "question": "How would you prevent an LLM judge from passing a run whose required tool never executed?",
+    "follow_up_axes": ["hard checks", "trajectory evidence", "judge authority"],
+    "reference_points": ["verify observations first", "missing receipt is a hard failure", "soft judge cannot override"]
+  }
+]

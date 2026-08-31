@@ -1,0 +1,8 @@
+# Keep in sync with pyproject.toml [project].dependencies used by the backend image.
+fastapi>=0.115,<0.116
+pydantic>=2.6
+langgraph>=0.2
+matplotlib>=3.8
+psycopg[binary,pool]>=3.2,<4.0
+redis>=5.2,<6.0
+uvicorn>=0.30,<1.0

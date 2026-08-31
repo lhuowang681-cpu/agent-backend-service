@@ -1,0 +1,26 @@
+[
+  {
+    "evidence_id": "ev_001",
+    "requirement_id": "req_sft_lora",
+    "claim": "熟悉 SFT / LoRA 微调流程",
+    "level": "C2",
+    "proof": "简历原文：复现 Qwen 4B + LoRA 的 SFT 训练流程，保存训练配置、loss 日志和 checkpoint。",
+    "risk": "需要准备可验证的项目细节和个人贡献"
+  },
+  {
+    "evidence_id": "ev_002",
+    "requirement_id": "req_alignment",
+    "claim": "了解 RLHF / DPO / GRPO / reward model 基本方法",
+    "level": "None",
+    "proof": "无直接证据",
+    "risk": "核心要求缺少简历证据"
+  },
+  {
+    "evidence_id": "ev_003",
+    "requirement_id": "req_eval",
+    "claim": "具备大模型评测、消融实验和 bad case 分析经验",
+    "level": "C2",
+    "proof": "简历原文：构建 refund_decision 场景的 full-only 与 random-mix 对照，进行四级 exposure 评测。",
+    "risk": "需要准备可验证的项目细节和个人贡献"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "corpus_revision": "evidence-v2-hardening-100-cases-v5",
+  "created_at": "2026-08-01T20:00:00+08:00",
+  "construction": "20 new scenario families x 5 evidence variants; family-disjoint 60/40 split",
+  "synthetic_only": true,
+  "v4_held_out_used_for_tuning": false,
+  "quality_claim_allowed_only_after_frozen_v5_held_out": true,
+  "splits": {
+    "development": {
+      "case_count": 60,
+      "family_count": 12,
+      "family_ids": [
+        "benefits_only_sparse",
+        "observability_delivery_compound",
+        "jd_repeated_anchor",
+        "evidence_repeated_anchor",
+        "source_code_cap",
+        "design_record_cap",
+        "metric_record_cap",
+        "contradictory_metric_record",
+        "mixed_artifact_caps",
+        "unicode_nfc_locator",
+        "punctuation_boundary",
+        "multi_atom_hard_gate"
+      ],
+      "corpus_file": "cases_dev_v5.json",
+      "corpus_sha256": "15df2cf579e8415da89911bd83ff9d5c336bcd1a59844e062db60b1977efc6ff",
+      "manifest_file": "manifest_dev_v5.json",
+      "manifest_sha256": "904944bd8b26b141df6ebb703a13ed07a3374d10c630cf04807f62eab3cefaa8",
+      "frozen_before_live_run": true
+    },
+    "held_out": {
+      "case_count": 40,
+      "family_count": 8,
+      "family_ids": [
+        "prefix_context_collision",
+        "suffix_context_collision",
+        "incident_report_cap",
+        "readme_cap",
+        "comparison_record_cap",
+        "near_duplicate_claims",
+        "title_noise_sparse",
+        "mixed_language_delimiters"
+      ],
+      "corpus_file": "cases_held_out_v5.json",
+      "corpus_sha256": "81d6771e8cf3b85ea23fb2900dd6ed475bda2ef4f8e71cf86db9f426855f6ba7",
+      "manifest_file": "manifest_held_out_v5.json",
+      "manifest_sha256": "042f5643f6bd394eeb312b3eb7235f434d19c205d608b9ae0326edf97d295704",
+      "frozen_before_live_run": true
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "invalidated_corpus_revision": "evidence-v2-100-cases-v2",
+  "replacement_corpus_revision": "evidence-v2-100-cases-v3",
+  "reason": "The v2 generator embedded strings labelled as experiment or production records inside original_resume while assigning C2/C3 gold levels. Under the approved Evidence Contract, original-resume self-report is at most C1; C2/C3 require independently selected source artifacts. Version v3 represents those records as explicit user_artifact sources.",
+  "discovery_timing": "Detected during the development production run before any held-out provider call.",
+  "development_live_rows_run": 180,
+  "held_out_live_rows_run": 0,
+  "quality_claim_allowed": false,
+  "historical_private_reports": [
+    "output/private/evidence_eval/glm-5.2-dev-baselines-100-v2.json",
+    "output/private/evidence_eval/glm-5.2-dev-production-100-v2.json"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "base_file": "pilot.jsonl",
+  "review_ledger": "pilot_ai_second_review.jsonl",
+  "reviewer_provenance": "ai_second_pass",
+  "review_status": "pending_human_spot_check",
+  "summary": {
+    "unit_count": 30,
+    "keep_count": 29,
+    "change_count": 1,
+    "high_confidence_count": 26,
+    "medium_confidence_count": 4
+  },
+  "proposed_changes": [
+    {
+      "case_id": "pilot-tool-005",
+      "requirement_id": "req_classifier",
+      "field": "gold_level",
+      "from": "C3",
+      "to": "C1",
+      "reason": "The quote reports a 91% result but does not attribute a training, implementation, or evaluation action to the candidate."
+    }
+  ],
+  "promotion_rule": "Do not modify pilot.jsonl or mark human_gold/frozen until the human spot check is recorded."
+}

@@ -1,0 +1,99 @@
+# Python and build output
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+
+# Local environments and editor state
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Generated runtime state: never publish sessions, caches, checkpoints, logs, or captures.
+output/
+*.log
+*.checkpoint
+*.sqlite
+*.db
+.internal/
+private_capture/
+.playwright-cli/
+
+# Local API/runtime configuration and credential-like files
+configs/*.local.json
+passward.txt
+password.txt
+glm.txt
+*.pem
+*.key
+
+# The source repository's interview-preparation notebooks are intentionally not part of this public release.
+docs/learning/
+!docs/learning/
+docs/learning/*
+!docs/learning/backend_service_from_zero_zh.md
+docs/interview_ready/
+docs/diagrams/
+scripts/run_*.py
+
+# The release keeps a focused public Runtime test suite; source-repository
+# documentation/training tests are intentionally excluded with their targets.
+tests/*.py
+!tests/test_agent_loop.py
+!tests/test_agent_policy.py
+!tests/test_agent_checkpoint.py
+!tests/test_agent_eval_harness.py
+!tests/test_agent_tool_registry.py
+!tests/test_agent_budgets.py
+!tests/test_agent_graph_runtime.py
+!tests/test_semantic_agents.py
+!tests/test_llm_agentization_runtime.py
+!tests/test_atomic_io.py
+!tests/test_reliability_fault_injection.py
+!tests/evidence_v2_fixtures.py
+!tests/test_adaptive_interview_*.py
+!tests/test_career_store.py
+!tests/test_evidence_*.py
+!tests/test_interview_context_builder.py
+!tests/test_interview_question_bank.py
+!tests/test_project_dossier.py
+!tests/test_tool_use_v2.py
+!tests/test_ui_adaptive_interview.py
+!tests/test_ui_app_test.py
+!tests/test_ui_evidence_v2.py
+!tests/test_ui_live_runtime.py
+!tests/test_ui_resume_loop.py
+!tests/test_backend_service.py
+!tests/test_backend_service_persistence.py
+!tests/test_backend_service_reliability.py
+!tests/test_application_assistant_evaluation.py
+
+# Isolated Locust environment; load tooling must not alter application dependencies.
+.venv-load/
+
+# Local transferred archives / broken worktree metadata
+.git.broken-worktree
+*.rar
+/old
+
+# MCP integration tests
+!tests/test_mcp_adapter.py
+!tests/test_mcp_real_runtime.py
+
+# Local learning / scratch scripts
+/agent_loop.py
+/async.py
+/async_test.py
+/async_tools.py
+/main_1.py
+/main_2.py
+/main_3.py
+/main_fastapi.py

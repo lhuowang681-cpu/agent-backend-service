@@ -1,0 +1,11 @@
+{
+  "verdict": "weak fit",
+  "score": 0.6667,
+  "coverage": 0.6667,
+  "risk_level": "medium",
+  "need_human_review": true,
+  "reason_codes": [
+    "coverage_between_40_70"
+  ],
+  "explanation": "must-have 覆盖率为 67%，verdict=weak fit。"
+}
