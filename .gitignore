@@ -97,3 +97,7 @@ tests/*.py
 /main_2.py
 /main_3.py
 /main_fastapi.py
+!tests/test_knowledge_vector_index.py
+!tests/test_knowledge_retriever.py
+!tests/test_knowledge_retriever.py
+!tests/test_knowledge_real_embedding.py
